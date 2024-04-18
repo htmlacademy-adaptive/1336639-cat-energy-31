@@ -6,6 +6,10 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -37,7 +41,11 @@
       <div class="promo__wrapper">
         <h1 class="promo__heading">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="images/index-can-mobile.png" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/promo-can-desktop@1x.png 1x, images/promo-can-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo-can-tablet@1x.png 1x, images/promo-can-tablet@2x.png 2x">
+          <img class="promo__image" src="images/promo-can-mobile@1x.png" srcset="images/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
+        </picture>
         <a class="promo__link button" href="#">Подобрать программу</a>
       </div>
     </section>
@@ -92,8 +100,14 @@
           <dd class="cost__value">15 000 руб.</dd>
         </dl>
         <div class="example__container slider">
-          <img class="slider__image" src="images/mobile-cat-fat.png" width="280" height="256" alt="Фото до: толстенький котик">
-          <img class="slider__image" src="images/mobile-cat-slim.png" width="280" height="256" alt="Фото после: худенький котик">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-before-tablet-desktop@1x.png 1x, images/slider-before-tablet-desktop@2x.png 2x">
+            <img class="slider__image" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фото до: толстенький котик">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.png 1x, images/slider-after-tablet-desktop@2x.png 2x">
+            <img class="slider__image" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
+          </picture>
           <button class="slider__button" type="button">Передвинуть ползунок</button>
         </div>
       </div>
@@ -107,7 +121,11 @@
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="contacts__wrapper-location">
-        <img class="contacts__location" src="images/mobile-location.jpg" width="320" height="362" alt="Карта офиса по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        <picture>
+          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/location-bg-desktop@1x.jpg 1x, images/location-bg-desktop@2x.jpg 2x">
+          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/location-bg-tablet@1x.jpg 1x, images/location-bg-tablet@2x.jpg 2x">
+          <img class="contacts__location" src="images/location-bg-mobile@1x.jpg" srcset="images/location-bg-mobile@2x.jpg 2x" width="320" height="362" alt="Карта офиса по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </picture>
       </div>
     </section>
     <div class="main-footer__wrapper">
