@@ -17,8 +17,16 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logotype logotype" href="#">
-        <img class="logotype__picture" src="images/mobile-logotype-picture.svg" width="33" height="38" alt="Логотип Cat Energy">
-        <img class="logotype__name" src="images/logotype.svg" width="101" height="18" alt="Товарный знак Cat Energy">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/desktop-logotype-picture.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/tablet-logotype-picture.svg">
+          <img class="logotype__picture" src="images/mobile-logotype-picture.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <picture>
+          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/desktop-logotype-name.svg">
+          <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/tablet-logotype-name.svg">
+          <img class="logotype__name" src="images/mobile-logotype-name.svg" width="101" height="20" alt="Товарный знак Cat Energy">
+        </picture>
       </a>
       <nav class="main-header__main-navigation main-navigation">
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -108,7 +116,7 @@
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.png 1x, images/slider-after-tablet-desktop@2x.png 2x">
             <img class="slider__image" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
           </picture>
-          <button class="slider__button" type="button">Передвинуть ползунок</button>
+          <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть ползунок</span></button>
         </div>
       </div>
     </section>
@@ -130,7 +138,7 @@
     </section>
     <div class="main-footer__wrapper">
       <a class="main-footer__logotype logotype" href="#">
-        <img class="logotype__name" src="images/logotype.svg" width="128" height="24" alt="Товарный знак Cat Energy">
+        <img class="logotype__name" src="images/logotype-name.svg" width="128" height="24" alt="Товарный знак Cat Energy">
       </a>
       <ul class="main-footer__social social-list">
         <li class="social-list__item">

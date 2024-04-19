@@ -17,8 +17,16 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logotype logotype" href="index.html">
-        <img class="logotype__picture" src="images/mobile-logotype-picture.svg" width="33" height="38" alt="Иконка Cat Energy">
-        <img class="logotype__name" src="images/logotype.svg" width="101" height="18" alt="Логотип Cat Energy">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/desktop-logotype-picture.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/tablet-logotype-picture.svg">
+          <img class="logotype__picture" src="images/mobile-logotype-picture.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <picture>
+          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/desktop-logotype-name.svg">
+          <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/tablet-logotype-name.svg">
+          <img class="logotype__name" src="images/mobile-logotype-name.svg" width="101" height="20" alt="Товарный знак Cat Energy">
+        </picture>
       </a>
       <nav class="main-header__main-navigation main-navigation">
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
