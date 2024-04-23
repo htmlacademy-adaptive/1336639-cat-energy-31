@@ -1,0 +1,32 @@
+.card__title-link {
+  text-decoration: none;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $card-title-color;
+  text-transform: uppercase;
+}
+
+.card__title {
+  font: inherit;
+}
+
+.card__options {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__title-link--to-all {
+  color: #111111;
+}
+

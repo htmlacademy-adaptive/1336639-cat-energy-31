@@ -1,0 +1,13 @@
+.main-navigation__list {
+  list-style-type: none;
+  text-align: center;
+}
+
+.main-navigation__link {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $heading-color;
+  text-transform: uppercase;
+  text-decoration: none;
+}

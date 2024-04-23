@@ -1,0 +1,25 @@
+.benefits__heading {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $heading-color;
+}
+
+.benefits__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+// Дальнейшее подключение счетчика
+/* .benefits__list {
+  counter-reset: example 0;
+}
+
+.benefits__item {
+  counter-increment: example 1;
+}
+
+.benefits__item::marker {
+  content: counter(example);
+} */

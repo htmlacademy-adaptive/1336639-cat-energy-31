@@ -1,0 +1,22 @@
+.product__title-link {
+  text-decoration: none;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $card-title-color;
+  text-transform: uppercase;
+}
+
+.product__title {
+  font: inherit;
+}
+
+.product__options {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.product__link {
+  text-decoration: none;
+}
