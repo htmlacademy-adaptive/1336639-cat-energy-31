@@ -3,9 +3,5 @@
 }
 
 .example__heading {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
-  color: $heading-color;
+  @include font($secondary-font, 36px, 40px, $heading-color);
 }

@@ -1,17 +1,10 @@
 .program__title {
-  font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: 400;
-  color: $heading-color;
+  @include font($secondary-font, 24px, 37px, $heading-color);
   text-transform: uppercase;
 }
 
 .program__link {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 16px;
-  color: $heading-color;
+  @include font($secondary-font, 16px, 16px, $heading-color);
   text-decoration: none;
   text-transform: uppercase;
 }

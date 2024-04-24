@@ -1,8 +1,5 @@
 .form__input {
-  font-family: $secondary-font;
-  font-size: 20px;
-  line-height: 30px;
-  color: inherit;
+  @include font($secondary-font, 20px, 30px, inherit);
   text-transform: uppercase;
 }
 

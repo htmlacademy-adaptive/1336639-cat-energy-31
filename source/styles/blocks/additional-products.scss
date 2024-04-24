@@ -1,9 +1,5 @@
 .additional-products__heading {
-  font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $heading-color;
+  @include font($secondary-font, 24px, 24px, $heading-color);
 }
 
 .additional-products__list {
@@ -12,8 +8,21 @@
 }
 
 .additional-products__promotion {
-  font-size: 16px;
-  line-height: 20px;
-  color: $white-text;
-  background-color: $primary-color;
+  @include font($primary-font, 16px, 20px, $light-text);
+  background-color: $opacity-primary-color;
+  width: 280px;
+  min-height: 290px;
+}
+
+.additional-products__wrapper {
+  background-image:
+    image-set(
+      url("../../images/promotion-bg-mobile@2x.jpg") 2x,
+      url("../../images/promotion-bg-mobile@1x.jpg") 1x
+    );
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+  width: 280px;
+  min-height: 290px;
 }

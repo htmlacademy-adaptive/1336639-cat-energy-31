@@ -1,7 +1,7 @@
 .main-container__heading {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: $heading-color;
+  @include font($secondary-font, 36px, 36px, $heading-color);
+}
+
+.main-container__additional-products {
+  margin: 0 auto;
 }

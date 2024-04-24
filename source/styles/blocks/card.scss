@@ -1,10 +1,6 @@
 .card__title-link {
+  @include font($secondary-font, 16px, 20px, $card-title-color);
   text-decoration: none;
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: $card-title-color;
   text-transform: uppercase;
 }
 

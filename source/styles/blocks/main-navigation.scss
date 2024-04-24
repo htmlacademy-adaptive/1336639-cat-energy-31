@@ -1,13 +1,11 @@
 .main-navigation__list {
   list-style-type: none;
+  padding: 0;
   text-align: center;
 }
 
 .main-navigation__link {
-  font-family: $secondary-font;
-  font-size: 20px;
-  line-height: 20px;
-  color: $heading-color;
+  @include font($secondary-font, 20px, 20px, $heading-color);
   text-transform: uppercase;
   text-decoration: none;
 }
