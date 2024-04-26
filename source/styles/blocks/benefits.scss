@@ -14,47 +14,92 @@
   margin: 0;
 }
 
-.benefits__mark {
-  width: 60px;
-  height: 60px;
-  background-color: $primary-color;
+.benefits__item {
   position: relative;
 }
 
-.benefits__leaf {
-  width: 30px;
-  height: 32px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.benefits__item--nutrients::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
 }
 
-.benefits__boiling {
-  width: 30px;
-  height: 32px;
+.benefits__item--nutrients::after {
+  content: "";
+  display: block;
+  min-width: 30px;
+  min-height: 32px;
+  background-image: url("../../icons/stack.svg#leaf-icon");
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 14px;
+  left: 15px;
 }
 
-.benefits__meal {
-  width: 30px;
-  height: 32px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.benefits__item--consistency::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
 }
 
-.benefits__clocks {
-  width: 30px;
-  height: 32px;
+.benefits__item--consistency::after {
+  content: "";
+  display: block;
+  min-width: 26px;
+  min-height: 29px;
+  background-image: url("../../icons/stack.svg#boiling-icon");
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 16px;
+  left: 18px;
+}
+
+.benefits__item--meal::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+}
+
+.benefits__item--meal::after {
+  content: "";
+  display: block;
+  min-width: 25px;
+  min-height: 30px;
+  background-image: url("../../icons/stack.svg#meal-icon");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 15px;
+  left: 18px;
+}
+
+.benefits__item--effect::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+}
+
+.benefits__item--effect::after {
+  content: "";
+  display: block;
+  min-width: 26px;
+  min-height: 31px;
+  background-image: url("../../icons/stack.svg#clocks-icon");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 15px;
+  left: 18px;
 }
 
 

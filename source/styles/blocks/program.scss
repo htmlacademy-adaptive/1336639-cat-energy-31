@@ -56,6 +56,20 @@
   left: 20px;
 }
 
+.program--slim::after {
+  content: "";
+  display: block;
+  min-width: 36px;
+  min-height: 50px;
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#cat-slim");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  position: absolute;
+  top: 21px;
+  left: 27px;
+}
+
 .program--pro::before {
   content: "";
   width: 50px;
@@ -66,6 +80,20 @@
   position: absolute;
   top: 24px;
   left: 20px;
+}
+
+.program--pro::after {
+  content: "";
+  display: block;
+  min-width: 67px;
+  min-height: 28px;
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#cat-pro");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  position: absolute;
+  top: 35px;
+  left: 13px;
 }
 
 .program__icon-slim {
