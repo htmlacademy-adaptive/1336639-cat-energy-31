@@ -1,7 +1,20 @@
 .example {
-  background-color: $extra-background;
+  padding: 0 20px;
 }
 
 .example__heading {
   @include font($secondary-font, 36px, 40px, $heading-color);
+  margin: 0;
+}
+
+.example__text {
+  margin: 0;
+}
+
+.example__list {
+  margin: 0;
+}
+
+.example__cost {
+  margin: 0;
 }

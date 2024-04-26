@@ -1,3 +1,21 @@
 .main-footer__wrapper {
   background-color: $accent-background;
+  padding: 40px 20px;
+}
+
+.main-footer__content {
+  width: 320px;
+  padding: 40px 20px;
+}
+
+.main-footer__logotype:hover {
+  opacity: 80%;
+}
+
+.main-footer__logotype:focus-visible {
+  opacity: 80%;
+}
+
+.main-footer__logotype:active {
+  opacity: 60%;
 }

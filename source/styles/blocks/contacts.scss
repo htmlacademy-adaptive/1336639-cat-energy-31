@@ -1,10 +1,22 @@
+.contacts__wrapper {
+  width: 280px;
+  padding: 26px 20px;
+  margin: 0 auto;
+}
+
 .contacts__cooperation {
   @include font($secondary-font, 16px, 30px, #111111);
   text-transform: uppercase;
+  margin: 0;
 }
 
 .contacts__address {
   @include font($primary-font, 14px, 20px, inherit);
+}
+
+.contacts__map {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .contacts--accent {

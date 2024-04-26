@@ -21,7 +21,7 @@
         <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logotype-picture-tablet.svg">
         <img class="logotype__picture" src="images/logotype-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
       </picture>
-      <img class="logotype__name" src="images/logotype-name-mobile.svg" width="101" height="18" alt="Товарный знак Cat Energy">
+      <img class="logotype__name" src="images/logotype-name.svg" width="101" height="18" alt="Товарный знак Cat Energy">
     </a>
     <nav class="main-header__main-navigation main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -68,7 +68,7 @@
               <dd class="card__value">700 &#8381;</dd>
             </div>
           </dl>
-          <a class="card__link button" href="#">Заказать</a>
+          <a class="card__link button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
@@ -95,7 +95,7 @@
               <dd class="card__value">1000 &#8381;</dd>
             </div>
           </dl>
-          <a class="card__link button" href="#">Заказать</a>
+          <a class="card__link button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
@@ -122,7 +122,7 @@
               <dd class="card__value">700 &#8381;</dd>
             </div>
           </dl>
-          <a class="card__link button" href="#">Заказать</a>
+          <a class="card__link button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
@@ -149,7 +149,7 @@
               <dd class="card__value">1000 &#8381;</dd>
             </div>
           </dl>
-          <a class="card__link button" href="#">Заказать</a>
+          <a class="card__link button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
@@ -176,7 +176,7 @@
               <dd class="card__value">400 &#8381;</dd>
             </div>
           </dl>
-          <a class="card__link button" href="#">Заказать</a>
+          <a class="card__link button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
@@ -203,7 +203,7 @@
               <dd class="card__value">700 &#8381;</dd>
             </div>
           </dl>
-          <a class="card__link button" href="#">Заказать</a>
+          <a class="card__link button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
@@ -230,7 +230,7 @@
               <dd class="card__value">500 &#8381;</dd>
             </div>
           </dl>
-          <a class="card__link button" href="#">Заказать</a>
+          <a class="card__link button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card card--to-all">
           <a class="card__title-link card__title-link--to-all" href="#">
@@ -252,7 +252,7 @@
             <dt class="product__key">1 упаковка (100 г)</dt>
             <dd class="product__value">200 &#8381;</dd>
           </dl>
-          <a class="product__link button" href="#">Заказать</a>
+          <a class="product__link button button--primary" href="#">Заказать</a>
         </li>
         <li class="additional-products__item product">
           <a class="product__title-link" href="#">
@@ -262,7 +262,7 @@
             <dt class="product__key">5 литров</dt>
             <dd class="product__value">50 &#8381;</dd>
           </dl>
-          <a class="product__link button" href="#">Заказать</a>
+          <a class="product__link button button--primary" href="#">Заказать</a>
         </li>
         <li class="additional-products__item product">
           <a class="product__title-link" href="#">
@@ -272,7 +272,7 @@
             <dt class="product__key">1 литр</dt>
             <dd class="product__value">100 &#8381;</dd>
           </dl>
-          <a class="product__link button" href="#">Заказать</a>
+          <a class="product__link button button--primary" href="#">Заказать</a>
         </li>
         <li class="additional-products__item product">
           <a class="product__title-link" href="#">
@@ -282,11 +282,13 @@
             <dt class="product__key">1 упаковка (30 г)</dt>
             <dd class="product__value">300 &#8381;</dd>
           </dl>
-          <a class="product__link button" href="#">Заказать</a>
+          <a class="product__link button button--primary" href="#">Заказать</a>
         </li>
       </ul>
-      <div class="additional-products__wrapper">
-        <p class="additional-products__promotion">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="additional-products__promotion promotion">
+        <div class="promotion__wrapper">
+          <p class="promotion__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <section class="main-container__subscribe subscribe">
@@ -295,7 +297,7 @@
       <form class="subscribe__form form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="email">Укажите Ваш e-mail (обязательно)</label>
         <input class="form__input" type="email" id="email" name="email" placeholder="кuklachev@gmail.com" required>
-        <button class="form__button button" type="submit">Подписаться</button>
+        <button class="form__button button button--primary" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
@@ -335,7 +337,10 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">HTML Academy</a>
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
+        HTML Academy
+        <div class="copyright__icon"></div>
+      </a>
     </div>
   </footer>
 </body>

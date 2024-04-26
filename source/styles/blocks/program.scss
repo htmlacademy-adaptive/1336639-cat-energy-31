@@ -1,10 +1,81 @@
+.program {
+  position: relative;
+  padding: 30px 33px 18px 20px;
+}
+
 .program__title {
   @include font($secondary-font, 24px, 37px, $heading-color);
   text-transform: uppercase;
+  margin: 0 0 29px 90px;
+}
+
+.program__description {
+  margin: 0;
 }
 
 .program__link {
   @include font($secondary-font, 16px, 16px, $heading-color);
   text-decoration: none;
   text-transform: uppercase;
+  display: flex;
+  gap: 15px;
+}
+
+.program__link::after {
+  content: "";
+  display: block;
+  min-width: 32px;
+  min-height: 10px;
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#arrow-short");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.program__link:hover::after {
+  mask-image: url("../../icons/stack.svg#arrow-long");
+}
+
+.program__link:focus-visible::after {
+  mask-image: url("../../icons/stack.svg#arrow-long");
+}
+
+.program__link:active {
+  opacity: 30%;
+}
+
+.program--slim::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  background: $primary-color;
+  position: absolute;
+  top: 24px;
+  left: 20px;
+}
+
+.program--pro::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  background: $primary-color;
+  position: absolute;
+  top: 24px;
+  left: 20px;
+}
+
+.program__icon-slim {
+  position: absolute;
+  top: 21px;
+  left: 27px;
+}
+
+.program__icon-pro {
+  position: absolute;
+  top: 35px;
+  left: 13px;
 }

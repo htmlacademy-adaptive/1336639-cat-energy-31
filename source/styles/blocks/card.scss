@@ -6,16 +6,19 @@
 
 .card__title {
   font: inherit;
+  margin: 0;
 }
 
 .card__options {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
 }
 
 .card__text {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
 }
 
 .card__link {
@@ -24,5 +27,16 @@
 
 .card__title-link--to-all {
   color: #111111;
+}
+
+.card__title-link--to-all::before {
+  content: "";
+  display: block;
+  min-width: 30px;
+  min-height: 30px;
+  background-color: #d3d3d3;
+  mask-image: url("../../icons/stack.svg#more-button");
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 

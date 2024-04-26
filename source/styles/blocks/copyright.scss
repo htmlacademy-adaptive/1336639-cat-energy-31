@@ -3,4 +3,31 @@
   line-height: 20px;
   text-decoration: none;
   color: inherit;
+  display: flex;
+  gap: 140px;
+  align-items: center;
 }
+
+.copyright__icon::after {
+  content: "";
+  display: block;
+  min-width: 27px;
+  min-height: 34px;
+  background-color: $social-color;
+  mask-image: url("../../icons/stack.svg#html-academy");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.copyright__icon:hover::after {
+  background-color: $primary-color;
+}
+
+.copyright__icon:hover:focus-visible {
+  background-color: $primary-color;
+}
+
+.copyright:active {
+  opacity: 30%;
+}
+

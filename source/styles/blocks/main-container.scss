@@ -1,7 +1,32 @@
 .main-container__heading {
   @include font($secondary-font, 36px, 36px, $heading-color);
+  padding: 0 20px;
+  margin: 0;
+}
+
+.main-container__promo {
+  margin-bottom: 20px;
+}
+
+.main-container__programs {
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.main-container__benefits {
+  width: 100%;
+  margin: 0 auto 49px;
+}
+
+.main-container__example {
+  background-color: $extra-background;
 }
 
 .main-container__additional-products {
+  width: 100%;
   margin: 0 auto;
+}
+
+.main-container__subscribe {
+  padding: 40px 20px;
 }

@@ -1,28 +1,20 @@
+.additional-products {
+  padding: 0 20px;
+}
+
 .additional-products__heading {
   @include font($secondary-font, 24px, 24px, $heading-color);
+  margin: 0;
+  margin-bottom: 36px;
 }
 
 .additional-products__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .additional-products__promotion {
-  @include font($primary-font, 16px, 20px, $light-text);
-  background-color: $opacity-primary-color;
   width: 280px;
-  min-height: 290px;
-}
-
-.additional-products__wrapper {
-  background-image:
-    image-set(
-      url("../../images/promotion-bg-mobile@2x.jpg") 2x,
-      url("../../images/promotion-bg-mobile@1x.jpg") 1x
-    );
-  background-repeat: no-repeat;
-  text-align: center;
-  background-size: cover;
-  width: 280px;
-  min-height: 290px;
+  margin: 0 auto;
 }

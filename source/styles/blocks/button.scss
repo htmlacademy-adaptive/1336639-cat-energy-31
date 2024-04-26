@@ -1,13 +1,35 @@
 .button {
-  @include font($secondary-font, 16px, 20px, $light-text);
-  background-color: $primary-color;
+  @include font($secondary-font, 16px, 20px, $base-text-color);
   border: none;
   text-transform: uppercase;
   padding: 10px;
   display: block;
 }
 
+.button--primary {
+  background-color: $primary-color;
+  color: $light-text;
+}
+
+.button--primary:hover {
+  background-color: $button-action;
+}
+
+.button--primary:active {
+  background-color: $button-action;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--secondary {
-  color: inherit;
   background-color: $accent-background;
 }
+
+.button--secondary:hover {
+  background-color: $button-secondary-action;
+}
+
+.button--secondary:active {
+  background-color: $button-secondary-action;
+  color: rgba(68, 68, 68, 0.3);
+}
+

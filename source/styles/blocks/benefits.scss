@@ -1,11 +1,62 @@
+.benefits {
+  padding: 0 20px;
+}
+
 .benefits__heading {
   @include font($secondary-font, 36px, 40px, $heading-color);
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .benefits__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
+
+.benefits__mark {
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+  position: relative;
+}
+
+.benefits__leaf {
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.benefits__boiling {
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.benefits__meal {
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.benefits__clocks {
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 // Дальнейшее подключение счетчика
 /* .benefits__list {

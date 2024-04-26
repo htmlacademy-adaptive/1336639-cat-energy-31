@@ -1,8 +1,17 @@
+.programs {
+  padding: 0 20px;
+}
+
 .programs__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .programs__item {
   background-color: $accent-background;
+}
+
+.programs__item:not(:last-child) {
+  margin-bottom: 20px;
 }
