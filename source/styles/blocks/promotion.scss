@@ -1,23 +1,23 @@
 .promotion {
   @include font($primary-font, 16px, 20px, $light-text);
+  margin: 0;
 }
 
 .promotion__wrapper {
   background-image:
+    linear-gradient($opacity-primary-color, $opacity-primary-color),
     image-set(
       url("../../images/promotion-bg-mobile@2x.jpg") 2x,
       url("../../images/promotion-bg-mobile@1x.jpg") 1x
     );
   background-repeat: no-repeat;
   text-align: center;
-  background-size: cover;
-  width: 280px;
+  background-position: center;
+  background-size: contain;
   min-height: 290px;
 }
 
 .promotion__text {
-  background-color: $opacity-primary-color;
-  min-height: 290px;
   margin: 0;
   padding: 59px 61px 43px 58px;
 }

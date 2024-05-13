@@ -1,6 +1,6 @@
 .program {
   position: relative;
-  padding: 30px 33px 18px 20px;
+  padding: 30px 20px 18px;
 }
 
 .program__title {
@@ -9,16 +9,13 @@
   margin: 0 0 29px 90px;
 }
 
-.program__description {
-  margin: 0;
-}
-
 .program__link {
   @include font($secondary-font, 16px, 16px, $heading-color);
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
   gap: 15px;
+  padding-top: 15px;
 }
 
 .program__link::after {
@@ -33,11 +30,13 @@
 }
 
 .program__link:hover::after {
-  mask-image: url("../../icons/stack.svg#arrow-long");
+  transform-origin: 0;
+  transform: scaleX(1.33);
 }
 
 .program__link:focus-visible::after {
-  mask-image: url("../../icons/stack.svg#arrow-long");
+  transform-origin: 0;
+  transform: scaleX(1.33);
 }
 
 .program__link:active {
@@ -59,8 +58,8 @@
 .program--slim::after {
   content: "";
   display: block;
-  min-width: 36px;
-  min-height: 50px;
+  width: 36px;
+  height: 50px;
   background-color: #000000;
   mask-image: url("../../icons/stack.svg#cat-slim");
   mask-repeat: no-repeat;
@@ -85,8 +84,8 @@
 .program--pro::after {
   content: "";
   display: block;
-  min-width: 67px;
-  min-height: 28px;
+  width: 67px;
+  height: 28px;
   background-color: #000000;
   mask-image: url("../../icons/stack.svg#cat-pro");
   mask-repeat: no-repeat;
@@ -94,6 +93,12 @@
   position: absolute;
   top: 35px;
   left: 13px;
+}
+
+.program__description {
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .program__icon-slim {

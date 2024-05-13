@@ -1,8 +1,30 @@
+.effect__item {
+  position: relative;
+  min-width: 124px;
+  padding-bottom: 14px;
+}
+
 .effect__key {
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  color: $base-text-color;
+  position: absolute;
+  background-color: $extra-background;
+  text-transform: lowercase;
+  width: 70%;
+  padding: 0 10px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
 }
 
 .effect__value {
   @include font($secondary-font, 24px, 24px, $heading-color);
+  text-align: center;
+  margin: 0;
+  padding: 14px 14px 18px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-transform: uppercase;
 }

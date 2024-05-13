@@ -15,16 +15,20 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logotype logotype" href="index.html">
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logotype-picture-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logotype-picture-tablet.svg">
-        <img class="logotype__picture" src="images/logotype-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-      </picture>
-      <img class="logotype__name" src="images/logotype-name.svg" width="101" height="18" alt="Товарный знак Cat Energy">
-    </a>
-    <nav class="main-header__main-navigation main-navigation">
-      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-header__wrapper">
+      <a class="main-header__logotype logotype" href="index.html">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logotype-picture-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logotype-picture-tablet.svg">
+          <img class="logotype__picture" src="images/logotype-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <img class="logotype__name" src="images/logotype-name.svg" width="101" height="18" alt="Товарный знак Cat Energy">
+      </a>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <nav class="main-header__main-navigation main-navigation main-header__main-navigation--close">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="index.html">Главная</a>
@@ -233,7 +237,7 @@
           <a class="card__link button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card card--to-all">
-          <a class="card__title-link card__title-link--to-all" href="#">
+          <a class="card__title-link card__title-link--to-all card__title-link--icon" href="#">
             <h3 class="card__title">Показать еще 100500 товаров</h3>
           </a>
           <p class="card__text">На самом деле вкусов гораздо больше!</p>
@@ -339,7 +343,6 @@
       </ul>
       <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener" aria-label="Сайт HTML Academy">
         HTML Academy
-        <div class="copyright__icon"></div>
       </a>
     </div>
   </footer>

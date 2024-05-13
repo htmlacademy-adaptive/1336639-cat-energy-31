@@ -4,11 +4,12 @@
   text-decoration: none;
   color: inherit;
   display: flex;
-  gap: 140px;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
 }
 
-.copyright__icon::after {
+.copyright::after {
   content: "";
   display: block;
   min-width: 27px;
@@ -19,15 +20,15 @@
   mask-position: center;
 }
 
-.copyright__icon:hover::after {
+.copyright:hover::after {
   background-color: $primary-color;
 }
 
-.copyright__icon:hover:focus-visible {
+.copyright:focus-visible::after {
   background-color: $primary-color;
 }
 
-.copyright:active {
+.copyright:active::after {
   opacity: 30%;
 }
 

@@ -15,18 +15,20 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logotype logotype" href="#">
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logotype-picture-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logotype-picture-tablet.svg">
-        <img class="logotype__picture" src="images/logotype-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-      </picture>
-      <img class="logotype__name" src="images/logotype-name.svg" width="101" height="18" alt="Товарный знак Cat Energy">
-    </a>
-    <nav class="main-header__main-navigation main-navigation">
-      <button class="main-navigation__toggle" type="button">
+    <div class="main-header__wrapper">
+      <a class="main-header__logotype logotype" href="#">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logotype-picture-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logotype-picture-tablet.svg">
+          <img class="logotype__picture" src="images/logotype-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <img class="logotype__name" src="images/logotype-name.svg" width="101" height="18" alt="Товарный знак Cat Energy">
+      </a>
+      <button class="main-header__toggle main-header__toggle--close" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-header__main-navigation main-navigation">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
           <a class="main-navigation__link main-navigation__link--current" href="#">Главная</a>
@@ -43,7 +45,7 @@
   <main class="main-container">
     <section class="main-container__promo promo">
       <div class="promo__wrapper">
-        <h1 class="promo__heading">Функциональное питание для котов</h1>
+        <h1 class="promo__heading">Функциональное <br>питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
       </div>
       <picture>
@@ -82,30 +84,32 @@
     <section class="main-container__example example">
       <h2 class="example__heading">Живой пример</h2>
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <dl class="example__list effect">
-        <div class="effect__item">
-          <dt class="effect__key">Снижение веса</dt>
-          <dd class="effect__value">5 кг</dd>
-        </div>
-        <div class="effect__item">
-          <dt class="effect__key">Затрачено времени</dt>
-          <dd class="effect__value">60 дней</dd>
-        </div>
-      </dl>
-      <dl class="example__cost cost">
-        <dt class="cost__key">Затраты на питание:</dt>
-        <dd class="cost__value">15 000 руб.</dd>
-      </dl>
-      <div class="example__container slider">
+      <div class="example__wrapper">
+        <dl class="example__list effect">
+          <div class="effect__item">
+            <dt class="effect__key">Снижение веса</dt>
+            <dd class="effect__value">5 кг</dd>
+          </div>
+          <div class="effect__item">
+            <dt class="effect__key">Затрачено времени</dt>
+            <dd class="effect__value">60 дней</dd>
+          </div>
+        </dl>
+        <dl class="example__cost cost">
+          <dt class="cost__key">Затраты на питание:&nbsp;</dt>
+          <dd class="cost__value">15 000 руб.</dd>
+        </dl>
+      </div>
+      <div class="example__slider slider">
         <picture>
           <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-before-tablet-desktop@1x.png 1x, images/slider-before-tablet-desktop@2x.png 2x">
-          <img class="slider__image" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фото до: толстенький котик">
-        </picture>
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.png 1x, images/slider-after-tablet-desktop@2x.png 2x">
-          <img class="slider__image" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
+          <img class="slider__image slider__image--before" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фото до: толстенький котик">
         </picture>
         <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть ползунок</span></button>
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.png 1x, images/slider-after-tablet-desktop@2x.png 2x">
+          <img class="slider__image slider__image--after" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
+        </picture>
       </div>
     </section>
   </main>
@@ -124,7 +128,7 @@
         </picture>
       </div>
     </section>
-    <div class="main-footer__wrapper main-footer__content">
+    <div class="main-footer__wrapper">
       <a class="main-footer__logotype logotype" href="index.html">
         <img class="logotype__name" src="images/logotype-name.svg" width="128" height="24" alt="Товарный знак Cat Energy">
       </a>
@@ -147,7 +151,6 @@
       </ul>
       <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener" aria-label="Сайт HTML Academy">
         HTML Academy
-        <div class="copyright__icon"></div>
       </a>
     </div>
   </footer>

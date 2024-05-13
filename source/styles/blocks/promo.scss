@@ -1,19 +1,22 @@
 .promo {
   background-image:
+    linear-gradient(to bottom,
+    $opacity-primary-color 302px,
+    #ffffff 302px),
     image-set(
       url("../../images/promo-bg-mobile@2x.jpg") 2x,
       url("../../images/promo-bg-mobile@1x.jpg") 1x
     );
   background-repeat: no-repeat;
-  text-align: center;
-  min-width: 280px;
-  min-height: 302px;
+  background-position: 50% 0, 50% 0;
+  background-size: cover, auto 302px;
 }
 
 .promo__wrapper {
-  background-color: $opacity-primary-color;
+  min-width: 280px;
   padding: 27px 35px 0;
-  min-height: 302px;
+  text-align: center;
+  margin-bottom: 29px;
 }
 
 .promo__heading {
@@ -24,9 +27,17 @@
 
 .promo__slogan {
   @include font($secondary-font, 14px, 14px, $light-text);
+  text-transform: uppercase;
   margin: 0;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .promo__link {
   text-decoration: none;
+  min-width: 280px;
+  margin: 0 20px;
 }

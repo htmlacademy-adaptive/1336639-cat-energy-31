@@ -12,94 +12,61 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
 
 .benefits__item {
-  position: relative;
+  // position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.benefits__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+  flex-shrink: 0;
 }
 
 .benefits__item--nutrients::before {
   content: "";
   display: block;
-  width: 60px;
-  height: 60px;
-  background-color: $primary-color;
-}
-
-.benefits__item--nutrients::after {
-  content: "";
-  display: block;
-  min-width: 30px;
-  min-height: 32px;
   background-image: url("../../icons/stack.svg#leaf-icon");
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  top: 14px;
-  left: 15px;
+  background-size: 30px 32px;
 }
 
 .benefits__item--consistency::before {
   content: "";
   display: block;
-  width: 60px;
-  height: 60px;
-  background-color: $primary-color;
-}
-
-.benefits__item--consistency::after {
-  content: "";
-  display: block;
-  min-width: 26px;
-  min-height: 29px;
   background-image: url("../../icons/stack.svg#boiling-icon");
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  top: 16px;
-  left: 18px;
+  background-size: 26px 29px;
 }
 
 .benefits__item--meal::before {
   content: "";
   display: block;
-  width: 60px;
-  height: 60px;
-  background-color: $primary-color;
-}
-
-.benefits__item--meal::after {
-  content: "";
-  display: block;
-  min-width: 25px;
-  min-height: 30px;
   background-image: url("../../icons/stack.svg#meal-icon");
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  top: 15px;
-  left: 18px;
+  background-size: 25px 30px;
 }
 
 .benefits__item--effect::before {
   content: "";
   display: block;
-  width: 60px;
-  height: 60px;
-  background-color: $primary-color;
-}
-
-.benefits__item--effect::after {
-  content: "";
-  display: block;
-  min-width: 26px;
-  min-height: 31px;
   background-image: url("../../icons/stack.svg#clocks-icon");
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  top: 15px;
-  left: 18px;
+  background-size: 26px 31px;
 }
 
 

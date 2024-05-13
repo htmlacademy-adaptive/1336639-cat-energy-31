@@ -1,18 +1,42 @@
+.card {
+  display: grid;
+  grid-template-areas:
+    "image  title"
+    "image  properties"
+    "button button";
+  padding: 20px 20px 24px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.card__image-link {
+  grid-area: image;
+  display: block;
+}
+
 .card__title-link {
   @include font($secondary-font, 16px, 20px, $card-title-color);
   text-decoration: none;
   text-transform: uppercase;
+  grid-area: title;
+  display: block;
 }
 
 .card__title {
   font: inherit;
   margin: 0;
+  max-width: 76px;
 }
 
 .card__options {
   font-size: 12px;
   line-height: 16px;
   margin: 0;
+  grid-area: properties;
+}
+
+.card__option {
+  display: flex;
+  justify-content: space-between;
 }
 
 .card__text {
@@ -23,20 +47,34 @@
 
 .card__link {
   text-decoration: none;
+  grid-area: button;
+}
+
+.card--to-all {
+  display: block;
+  padding: 25px 20px 24px;
+}
+
+.card--to-all .card__title {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.card--to-all .card__text {
+  text-align: center;
+  margin-bottom: 21px;
 }
 
 .card__title-link--to-all {
-  color: #111111;
-}
-
-.card__title-link--to-all::before {
-  content: "";
   display: block;
-  min-width: 30px;
-  min-height: 30px;
-  background-color: #d3d3d3;
-  mask-image: url("../../icons/stack.svg#more-button");
-  mask-repeat: no-repeat;
-  mask-position: center;
+  color: #111111;
+  padding-top: 53px;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
+.card__title-link--icon {
+  background-image: url("../../icons/stack.svg#more-button");
+  background-size: 30px 30px;
+}

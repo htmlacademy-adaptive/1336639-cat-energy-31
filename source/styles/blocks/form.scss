@@ -1,9 +1,14 @@
 .form__input {
   @include font($secondary-font, 20px, 30px, inherit);
   text-transform: uppercase;
+  padding: 13px;
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  margin-bottom: 16px;
 }
 
 .form__button {
   font-size: 20px;
   line-height: 26px;
+  width: 100%;
 }

@@ -9,3 +9,48 @@
 .main-header__logotype:active {
   opacity: 60%;
 }
+
+.main-header__wrapper {
+  padding: 13px 20px 14px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main-header__main-navigation--close {
+  display: none;
+}
+
+.main-header__toggle {
+  min-width: 24px;
+  min-height: 24px;
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.main-header__toggle::before {
+  content: "";
+  display: block;
+  min-width: 24px;
+  min-height: 24px;
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#menu-button");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 24px 24px;
+}
+
+.main-header__toggle:hover {
+  opacity: 50%;
+}
+
+.main-navigation__toggle:active {
+  opacity: 30%;
+}
+
+.main-header__toggle--close::before {
+  mask-image: url("../../icons/stack.svg#close-button");
+  mask-size: 18px 18px;
+}

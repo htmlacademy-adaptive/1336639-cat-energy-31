@@ -1,3 +1,11 @@
 .cost {
   @include font($secondary-font, 14px, 20px, $heading-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.cost__value {
+  margin: 0;
 }

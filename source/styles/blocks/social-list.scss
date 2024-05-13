@@ -2,78 +2,69 @@
   list-style-type: none;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
+  justify-content: center;
+  padding: 20px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
-.social-list__link {
+.social-list__link::before {
   text-decoration: none;
-}
-
-.social-list__link--vkontakte {
   content: "";
   display: block;
   min-width: 28px;
   min-height: 22px;
   background-color: $social-color;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.social-list__link--vkontakte::before {
   mask-image: url("../../icons/stack.svg#vkontakte");
-  mask-repeat: no-repeat;
-  mask-position: center;
 }
 
-.social-list__link--vkontakte:hover {
+.social-list__link--vkontakte:hover::before {
   background-color: $primary-color;
 }
 
-.social-list__link--vkontakte:focus-visible {
+.social-list__link--vkontakte:focus-visible::before {
   background-color: $primary-color;
 }
 
-.social-list__link--vkontakte:active {
+.social-list__link--vkontakte:active::before {
   opacity: 30%;
 }
 
-.social-list__link--youtube {
-  content: "";
-  display: block;
-  min-width: 28px;
-  min-height: 22px;
-  background-color: $social-color;
+.social-list__link--youtube::before {
   mask-image: url("../../icons/stack.svg#youtube");
-  mask-repeat: no-repeat;
-  mask-position: center;
 }
 
-.social-list__link--youtube:hover {
+.social-list__link--youtube:hover::before {
   background-color: $primary-color;
 }
 
-.social-list__link--youtube:focus-visible {
+.social-list__link--youtube:focus-visible::before {
   background-color: $primary-color;
 }
 
-.social-list__link--youtube:active {
+.social-list__link--youtube:active::before {
   opacity: 30%;
 }
 
-.social-list__link--telegram {
-  content: "";
-  display: block;
-  min-width: 28px;
-  min-height: 22px;
-  background-color: $social-color;
+.social-list__link--telegram::before {
   mask-image: url("../../icons/stack.svg#telegram");
-  mask-repeat: no-repeat;
-  mask-position: center;
 }
 
-.social-list__link--telegram:hover {
+.social-list__link--telegram:hover::before {
   background-color: $primary-color;
 }
 
-.social-list__link--telegram:focus-visible {
+.social-list__link--telegram:focus-visible::before {
   background-color: $primary-color;
 }
 
-.social-list__link--telegram:active {
+.social-list__link--telegram:active::before {
   opacity: 30%;
 }
