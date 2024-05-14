@@ -86,3 +86,11 @@
 .slider__button:active::after {
   opacity: 60%;
 }
+
+@media (min-width: $tablet-width) {
+  .slider {
+    width: 560px;
+    height: 512px;
+    grid-template-columns: 280px auto 280px;
+  }
+}

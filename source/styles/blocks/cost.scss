@@ -9,3 +9,22 @@
 .cost__value {
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .cost {
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 250px;
+    gap: 9px;
+  }
+
+  .cost__key {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .cost__value {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

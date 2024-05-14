@@ -38,6 +38,40 @@
 
 .promo__link {
   text-decoration: none;
-  min-width: 280px;
   margin: 0 20px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background: none;
+    padding: 40px 30px 0;
+    position: relative;
+  }
+
+  .promo__wrapper {
+    text-align: left;
+    padding: 0;
+    margin-left: 90px;
+  }
+
+  .promo__heading {
+    @include font($secondary-font, 60px, 60px, $heading-color);
+    margin-bottom: 40px;
+  }
+
+  .promo__slogan {
+    @include font($secondary-font, 20px, 20px, $heading-color);
+  }
+
+  .promo__link {
+    position: absolute;
+    width: 244px;
+    margin: 0;
+    bottom: 526px;
+    left: 120px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px;
+  }
 }

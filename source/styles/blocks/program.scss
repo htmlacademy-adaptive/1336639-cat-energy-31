@@ -6,7 +6,9 @@
 .program__title {
   @include font($secondary-font, 24px, 37px, $heading-color);
   text-transform: uppercase;
-  margin: 0 0 29px 90px;
+  margin: 0;
+  margin-bottom: 29px;
+  margin-left: 70px;
 }
 
 .program__link {
@@ -52,7 +54,6 @@
   background: $primary-color;
   position: absolute;
   top: 24px;
-  left: 20px;
 }
 
 .program--slim::after {
@@ -78,7 +79,6 @@
   background: $primary-color;
   position: absolute;
   top: 24px;
-  left: 20px;
 }
 
 .program--pro::after {
@@ -97,7 +97,7 @@
 
 .program__description {
   margin: 0;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -111,4 +111,63 @@
   position: absolute;
   top: 35px;
   left: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    padding: 77px 63px 53px 52px;
+  }
+
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 24px;
+    max-width: 400px;
+  }
+
+  .program__description {
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    max-width: 340px;
+    margin-bottom: 48px;
+    padding: 0;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+  }
+
+  .program--slim::before {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    right: 63px;
+  }
+
+  .program--slim::after {
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    right: 93px;
+    left: auto;
+  }
+
+  .program--pro::before {
+    width: 200px;
+    height: 200px;
+    top: 91px;
+    right: 63px;
+  }
+
+  .program--pro::after {
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    right: 29px;
+    left: auto;
+  }
 }

@@ -1,3 +1,10 @@
+.effect {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
 .effect__item {
   position: relative;
   min-width: 124px;
@@ -22,9 +29,35 @@
 .effect__value {
   @include font($secondary-font, 24px, 24px, $heading-color);
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 14px 14px 18px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    gap: 43px;
+    max-width: 400px;
+  }
+
+  .effect__item {
+    min-width: 162px;
+    padding-bottom: 5px;
+  }
+
+  .effect__value {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 15px 15px 20px;
+  }
+
+  .effect__key {
+    font-size: 14px;
+    line-height: 14px;
+    width: max-content;
+    max-width: 90%;
+    background-color: #ffffff;
+  }
 }

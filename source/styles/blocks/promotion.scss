@@ -1,9 +1,6 @@
 .promotion {
   @include font($primary-font, 16px, 20px, $light-text);
   margin: 0;
-}
-
-.promotion__wrapper {
   background-image:
     linear-gradient($opacity-primary-color, $opacity-primary-color),
     image-set(
@@ -14,12 +11,11 @@
   text-align: center;
   background-position: center;
   background-size: contain;
-  min-height: 290px;
+  padding: 59px 61px 43px 58px;
 }
 
 .promotion__text {
   margin: 0;
-  padding: 59px 61px 43px 58px;
 }
 
 .promotion__text::before {
@@ -34,3 +30,21 @@
   margin-bottom: 48px;
 }
 
+@media (min-width: $tablet-width) {
+  .promotion {
+    padding: 57px 125px 60px 77px;
+    background-size: cover;
+    background-position: 50% 0, 0 60%;;
+  }
+
+  .promotion__text {
+    display: flex;
+    align-items: center;
+    gap: 264px;
+    text-align: left;
+  }
+
+  .promotion__text::before {
+    margin-bottom: 0;
+  }
+}

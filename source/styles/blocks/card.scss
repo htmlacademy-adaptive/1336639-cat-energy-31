@@ -5,7 +5,6 @@
     "image  properties"
     "button button";
   padding: 20px 20px 24px;
-  border-bottom: 1px solid #ebebeb;
 }
 
 .card__image-link {
@@ -77,4 +76,78 @@
 .card__title-link--icon {
   background-image: url("../../icons/stack.svg#more-button");
   background-size: 30px 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    display: grid;
+    grid-template-areas:
+    "image"
+    "title"
+    "properties"
+    "button";
+    justify-items: center;
+    padding: 0 37px 40px 37px;
+  }
+
+  .card__image-link {
+    margin: 10px auto 22px;
+  }
+
+  .card__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 140px;
+  }
+
+  .card__options {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .card__option {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .card__option:not(:first-child) {
+    padding-top: 5px;
+  }
+
+  .card__link {
+    width: 100%;
+  }
+
+  .card--to-all {
+    display: block;
+    margin-top: 82px;
+    background-image: none;
+    border: 1px solid $accent-background;
+    padding: 50px 37px 40px;
+  }
+
+  .card__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .card__title-link--to-all {
+    padding-top: 110px;
+  }
+
+  .card__title-link--icon {
+    background-size: 60px 60px;
+  }
+
+  .card--to-all .card__title {
+    margin-bottom: 23px;
+  }
+
+  .card--to-all .card__text  {
+    margin-bottom: 82px;
+  }
 }

@@ -1,14 +1,34 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .form__input {
   @include font($secondary-font, 20px, 30px, inherit);
   text-transform: uppercase;
   padding: 13px;
   border: 1px solid #cdcdcd;
-  width: 100%;
-  margin-bottom: 16px;
 }
 
 .form__button {
   font-size: 20px;
   line-height: 26px;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+  }
+
+  .form__input {
+    min-width: 376px;
+  }
+
+  .form__button {
+    width: 236px;
+  }
 }

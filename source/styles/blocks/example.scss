@@ -22,10 +22,6 @@
 
 .example__list {
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  justify-content: center;
 }
 
 .example__cost {
@@ -34,4 +30,29 @@
 
 .example__slider {
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding: 45px 30px 101px;
+  }
+
+  .example__heading {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  .example__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 99px;
+    flex-wrap: wrap;
+  }
 }

@@ -2,4 +2,11 @@
   text-decoration: none;
   display: flex;
   gap: 56px;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .logotype {
+    gap: 13px;
+  }
 }

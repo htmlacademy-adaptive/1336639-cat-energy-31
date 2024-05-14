@@ -6,8 +6,6 @@
   gap: 24px;
   justify-content: center;
   padding: 20px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
 }
 
 .social-list__link::before {
@@ -67,4 +65,11 @@
 
 .social-list__link--telegram:active::before {
   opacity: 30%;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+  padding: 0;
+  max-width: 300px;
+  }
 }

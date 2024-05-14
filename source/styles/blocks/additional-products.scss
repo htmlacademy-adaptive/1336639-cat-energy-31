@@ -15,14 +15,6 @@
   margin: 0;
 }
 
-.additional-products__item {
-  border-bottom: 1px solid #cdcdcd;
-}
-
-.additional-products__item:first-child {
-  border-top: 1px solid #cdcdcd;
-}
-
 .additional-products__item:last-child {
   margin-bottom: 35px;
 }
@@ -30,4 +22,21 @@
 .additional-products__promotion {
   min-width: 280px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-products {
+    padding: 0 30px;
+  }
+
+  .additional-products__heading {
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  .additional-products__item:last-child {
+    margin-bottom: 70px;
+  }
 }
