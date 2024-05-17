@@ -38,8 +38,8 @@
   .product {
     display: grid;
     grid-template-areas:
-    "title options"
-    "button button";
+      "title options"
+      "button button";
     gap: 25px;
     padding: 25px 37px 27px;
     border: 1px solid $accent-background;
@@ -49,7 +49,7 @@
     border-top: 1px solid $accent-background;
   }
 
-    .product__title-link  {
+  .product__title-link {
     font-size: 20px;
     line-height: 20px;
     grid-area: title;

@@ -82,12 +82,12 @@
   .card {
     display: grid;
     grid-template-areas:
-    "image"
-    "title"
-    "properties"
-    "button";
+      "image"
+      "title"
+      "properties"
+      "button";
     justify-items: center;
-    padding: 0 37px 40px 37px;
+    padding: 0 37px 40px;
   }
 
   .card__image-link {
@@ -147,7 +147,7 @@
     margin-bottom: 23px;
   }
 
-  .card--to-all .card__text  {
+  .card--to-all .card__text {
     margin-bottom: 82px;
   }
 }

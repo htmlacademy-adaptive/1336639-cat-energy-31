@@ -5,8 +5,26 @@
 .additional-products__heading {
   @include font($secondary-font, 24px, 24px, $heading-color);
   margin: 0;
+  margin-top: 25px;
   margin-bottom: 36px;
-  padding-top: 25px;
+  background-color: #ffffff;
+  width: fit-content;
+  max-width: 85%;
+  position: relative;
+  box-shadow: -40px 0 0 #ffffff, 40px 0 0#ffffff;
+}
+
+.additional-products__heading::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100vw;
+  background-color: $primary-color;
+  position: absolute;
+  top: 50%;
+  left: -50vw;
+  z-index: -1;
+  box-shadow: 100vw 0 0 $primary-color;
 }
 
 .additional-products__list {
@@ -34,6 +52,7 @@
     line-height: 32px;
     padding: 0;
     margin-bottom: 80px;
+    margin-left: 40px;
   }
 
   .additional-products__item:last-child {

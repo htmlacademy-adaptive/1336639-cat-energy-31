@@ -70,7 +70,7 @@
 
 @media (min-width: $tablet-width) {
   .benefits {
-    padding: 48px 30px 46px 30px;
+    padding: 48px 30px 46px;
   }
 
   .benefits__heading {
@@ -81,8 +81,7 @@
 
   .benefits__list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     gap: 37px 153px;
     counter-reset: benefits-counter;
   }
@@ -98,9 +97,15 @@
     line-height: 24px;
   }
 
+  .benefits__item::before {
+    width: 80px;
+    height: 80px;
+  }
+
   .benefits__item::after {
     content: counter(benefits-counter);
     counter-increment: benefits-counter;
+
     @include font($secondary-font, 280px, 280px, $accent-background);
     position: absolute;
     top: 0;
