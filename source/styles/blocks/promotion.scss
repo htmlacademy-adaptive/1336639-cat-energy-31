@@ -32,6 +32,12 @@
 
 @media (min-width: $tablet-width) {
   .promotion {
+    background-image:
+      linear-gradient($opacity-primary-color, $opacity-primary-color),
+      image-set(
+        url("../../images/promotion-bg-tablet@2x.jpg") 2x,
+        url("../../images/promotion-bg-tablet@1x.jpg") 1x
+      );
     padding: 57px 125px 60px 77px;
     background-size: cover;
     background-position: 50% 0, 0 60%;

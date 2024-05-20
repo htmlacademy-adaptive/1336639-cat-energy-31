@@ -73,3 +73,26 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    min-width: $max-desktop-container;
+    margin: 55px auto 29px;
+    padding: 0;
+  }
+
+  .main-header__wrapper {
+    margin-right: auto;
+    min-width: 50%;
+  }
+
+  .main-header__logotype {
+    width: 202px;
+    height: 59px;
+    display: block;
+  }
+
+  .main-header__main-navigation {
+    min-width: 50%;
+  }
+}

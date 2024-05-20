@@ -45,3 +45,24 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    padding: 60px 78px 60px 80px;
+    gap: 87px;
+    max-width: 565px;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translate(-107%);
+    background-color: #ffffff;
+  }
+
+  .contacts__address {
+    gap: 19px;
+  }
+}

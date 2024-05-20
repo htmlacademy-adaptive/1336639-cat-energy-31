@@ -8,7 +8,19 @@
   @include font($secondary-font, 20px, 30px, inherit);
   text-transform: uppercase;
   padding: 13px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
+}
+
+.form__input:hover {
+  border-color: #cdcdcd;
+}
+
+.form__input:focus-visible {
+  border: 2px solid $base-text-color;
+}
+
+.form__input:user-invalid {
+  border: 2px solid #ff8282;
 }
 
 .form__button {

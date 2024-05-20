@@ -61,3 +61,20 @@
     bottom: -8px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-navigation__list {
+    max-width: calc($max-desktop-container / 2);
+    justify-content: flex-end;
+  }
+
+  .main-navigation__link {
+    color: $light-text;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-navigation__link--current::after {
+    background-color: #ffffff;
+  }
+}

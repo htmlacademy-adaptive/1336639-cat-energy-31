@@ -171,3 +171,47 @@
     left: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .program {
+    padding: 77px 61px 55px 52px;
+  }
+
+  .program__description {
+    max-width: 457px;
+    margin-bottom: 23px;
+  }
+
+  .program__title {
+    margin: 0 auto 73px 162px;
+    max-width: 250px;
+  }
+
+  .program--slim::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .program--slim::after {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+  }
+
+  .program--pro::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .program--pro::after {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+  }
+}

@@ -28,3 +28,12 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .cost {
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 436px;
+    gap: 63px;
+  }
+}

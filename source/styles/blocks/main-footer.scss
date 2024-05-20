@@ -43,3 +43,15 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    background-color: $accent-background;
+  }
+
+  .main-footer__wrapper {
+    padding: 67px 0;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}

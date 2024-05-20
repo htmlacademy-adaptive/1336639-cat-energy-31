@@ -55,3 +55,31 @@
     flex-flow: row wrap;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example {
+    padding: 0 0 75px;
+  }
+
+  .example__heading {
+    margin-bottom: 146px;
+  }
+
+  .example__text {
+    max-width: 432px;
+    margin-bottom: 69px;
+  }
+
+  .example__container {
+    max-width: $max-desktop-container;
+    margin: 0 auto;
+    display: flex;
+    gap: 224px;
+  }
+
+  .example__wrapper {
+    flex-direction: column;
+    gap: 55px;
+    margin: 0;
+  }
+}

@@ -1,14 +1,12 @@
 .effect {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .effect__item {
-  position: relative;
-  min-width: 124px;
-  padding-bottom: 14px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .effect__key {
@@ -16,14 +14,11 @@
   line-height: 12px;
   text-align: center;
   color: $base-text-color;
-  position: absolute;
   background-color: $extra-background;
   text-transform: lowercase;
   width: 70%;
   padding: 0 10px;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 0;
+  margin: -10px auto 0;
 }
 
 .effect__value {
@@ -34,6 +29,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-transform: uppercase;
+  min-width: 124px;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,13 +40,13 @@
 
   .effect__item {
     min-width: 162px;
-    padding-bottom: 5px;
   }
 
   .effect__value {
     font-size: 30px;
     line-height: 37px;
     padding: 15px 15px 20px;
+    min-width: 162px;
   }
 
   .effect__key {
@@ -59,5 +55,17 @@
     width: max-content;
     max-width: 90%;
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    max-width: 436px;
+    gap: 42px;
+    justify-content: flex-start;
+  }
+
+  .effect__key {
+    background-color: $accent-background;
   }
 }

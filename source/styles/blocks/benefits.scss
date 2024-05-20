@@ -23,6 +23,12 @@
   align-items: center;
 }
 
+.benefits__item-text {
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: none;
+  }
+}
+
 .benefits__item::before {
   content: "";
   display: block;
@@ -114,16 +120,21 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .benefits {
+    padding: 0;
+    max-width: $max-desktop-container;
+  }
 
-// Дальнейшее подключение счетчика
-/* .benefits__list {
-  counter-reset: example 0;
+  .benefits__heading {
+    margin-bottom: 32px;
+  }
+
+  .benefits__list {
+    gap: 80px;
+  }
+
+  .benefits__item {
+    max-width: 245px;
+  }
 }
-
-.benefits__item {
-  counter-increment: example 1;
-}
-
-.benefits__item::marker {
-  content: counter(example);
-} */
