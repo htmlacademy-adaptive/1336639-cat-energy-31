@@ -41,6 +41,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-navigation--closed {
+    display: block;
+  }
+
   .main-navigation__list {
     display: flex;
     flex-wrap: wrap;
@@ -75,6 +79,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-navigation--closed {
+    display: block;
+  }
+
   .main-navigation__list {
     max-width: calc($max-desktop-container / 2);
     justify-content: flex-end;
