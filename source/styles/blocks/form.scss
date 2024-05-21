@@ -37,10 +37,24 @@
   }
 
   .form__input {
-    min-width: 376px;
+    width: 376px;
   }
 
   .form__button {
     width: 236px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 752px;
+  }
+
+  .form__button {
+    width: 256px;
+  }
+
+  .form__input {
+    flex-grow: 1;
   }
 }

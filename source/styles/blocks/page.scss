@@ -8,7 +8,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page__body::before {
+  .page__body--index::before {
     content: "";
     background-image:
       linear-gradient(to right,

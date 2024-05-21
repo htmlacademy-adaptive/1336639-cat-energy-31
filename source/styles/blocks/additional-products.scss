@@ -59,3 +59,35 @@
     margin-bottom: 70px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional-products {
+    max-width: $max-desktop-container;
+    padding: 0;
+  }
+
+  .additional-products__heading {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 79px;
+  }
+
+  .additional-products__wrapper {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .additional-products__list {
+    min-width: 896px;
+  }
+
+  .additional-products__item:last-child {
+    margin: 0;
+  }
+
+  .additional-products__promotion {
+    min-width: 245px;
+  }
+}

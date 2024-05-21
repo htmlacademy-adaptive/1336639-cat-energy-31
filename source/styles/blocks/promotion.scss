@@ -54,3 +54,28 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promotion {
+    background-image:
+      linear-gradient($opacity-primary-color, $opacity-primary-color),
+      image-set(
+        url("../../images/promotion-bg-desktop@2x.jpg") 2x,
+        url("../../images/promotion-bg-desktop@1x.jpg") 1x
+      );
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    background-size: contain;
+    width: 245px;
+    height: 288px;
+    padding: 56px 42px 43px;
+  }
+
+  .promotion__text {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    text-align: center;
+  }
+}

@@ -21,3 +21,20 @@
     background-image: linear-gradient(to bottom, #ffffff 81px, $accent-background 81px);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    max-width: $max-desktop-container;
+  }
+
+  .catalog__list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  .catalog__item {
+    width: 245px;
+  }
+}

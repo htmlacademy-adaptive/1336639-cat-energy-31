@@ -69,3 +69,31 @@
     grid-area: button;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .product {
+    grid-template-areas: "title options button";
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    gap: 40px;
+    padding: 15px 1px 16px;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .product:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__options {
+    justify-content: space-between;
+  }
+
+  .product__link {
+    min-width: 244px;
+  }
+}

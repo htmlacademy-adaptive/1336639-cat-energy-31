@@ -84,4 +84,23 @@
     margin: 0 auto;
     background-image: linear-gradient(to bottom, #ffffff 135px, $accent-background 135px);
   }
+
+  .main-container__heading {
+    margin: 0 auto;
+    max-width: $max-desktop-container;
+    padding: 45px 0 84px;
+  }
+
+  .main-container__catalog {
+    margin: 0 auto 71px;
+  }
+
+  .main-container__additional-products {
+    margin-bottom: 96px;
+  }
+
+  .main-container__subscribe {
+    margin: 0 auto 104px;
+    padding: 0;
+  }
 }
