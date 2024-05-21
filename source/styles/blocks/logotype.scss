@@ -5,6 +5,18 @@
   align-items: center;
 }
 
+.logotype:hover:not(.logotype--current-page) {
+  opacity: 80%;
+}
+
+.logotype:focus-visible:not(.logotype--current-page) {
+  opacity: 80%;
+}
+
+.logotype:active:not(.logotype--current-page) {
+  opacity: 60%;
+}
+
 @media (min-width: $tablet-width) {
   .logotype {
     gap: 13px;

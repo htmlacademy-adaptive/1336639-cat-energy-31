@@ -16,7 +16,7 @@
 <body class="page__body page__body--index">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logotype logotype" href="#" tabindex="-1">
+      <a class="main-header__logotype logotype logotype--current-page" href="#" tabindex="-1">
         <picture>
           <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logotype-picture-desktop.svg">
           <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logotype-picture-tablet.svg">
@@ -24,7 +24,7 @@
         </picture>
         <img class="logotype__name" src="images/logotype-name.svg" width="101" height="18" alt="Товарный знак Cat Energy">
       </a>
-      <button class="main-header__toggle main-header__toggle--close" type="button">
+      <button class="main-header__toggle main-header__toggle--nojs" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
@@ -73,15 +73,13 @@
       </ul>
     </section>
     <section class="main-container__benefits benefits">
-      <div class="benefits__wrapper">
-        <h2 class="benefits__heading">Как это работает</h2>
-        <ol class="benefits__list">
-          <li class="benefits__item benefits__item--nutrients">Функциональное питание содержит только полезные питательные вещества.</li>
-          <li class="benefits__item benefits__item--consistency">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-          <li class="benefits__item benefits__item--meal">Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li class="benefits__item benefits__item--effect">Уже через месяц наслаждайтесь изменениями к лучшему <br class="benefits__item-text">вашего питомца!</li>
-        </ol>
-      </div>
+      <h2 class="benefits__heading">Как это работает</h2>
+      <ol class="benefits__list">
+        <li class="benefits__item benefits__item--nutrients">Функциональное питание содержит только полезные питательные вещества.</li>
+        <li class="benefits__item benefits__item--consistency">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+        <li class="benefits__item benefits__item--meal">Замените один-два приема обычной еды на наше функциональное питание.</li>
+        <li class="benefits__item benefits__item--effect">Уже через месяц наслаждайтесь изменениями к лучшему <br class="benefits__item-text">вашего питомца!</li>
+      </ol>
     </section>
     <section class="main-container__example example">
       <div class="example__container">
@@ -130,11 +128,7 @@
         </address>
       </div>
       <div class="contacts__map">
-        <picture>
-          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/location-bg-desktop@1x.jpg 1x, images/location-bg-desktop@2x.jpg 2x">
-          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/location-bg-tablet@1x.jpg 1x, images/location-bg-tablet@2x.jpg 2x">
-          <img class="contacts__location" src="images/location-bg-mobile@1x.jpg" srcset="images/location-bg-mobile@2x.jpg 2x" width="320" height="362" alt="Карта офиса по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-        </picture>
+        <iframe class="contacts__map-widget" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0fdb1c5dfb9f3c34e1f1362539d3a3e611ed2d3d4f666ad9c6ae9284580a4cb1&amp;source=constructor" width="100%" height="100%"></iframe>
       </div>
     </section>
     <div class="main-footer__wrapper">
@@ -163,6 +157,7 @@
       </a>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

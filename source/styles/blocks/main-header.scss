@@ -1,24 +1,8 @@
-.main-header__logotype:hover {
-  opacity: 80%;
-}
-
-.main-header__logotype:focus-visible {
-  opacity: 80%;
-}
-
-.main-header__logotype:active {
-  opacity: 60%;
-}
-
 .main-header__wrapper {
   padding: 13px 20px 14px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #d9d9d9;
-}
-
-.main-header__main-navigation--close {
-  display: none;
 }
 
 .main-header__toggle {
@@ -42,17 +26,31 @@
   mask-size: 24px 24px;
 }
 
-.main-header__toggle:hover {
+.main-header__toggle--close::before {
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#close-button");
+  mask-size: 18px 18px;
+  min-width: 18px;
+  min-height: 18px;
+}
+
+.main-header__toggle:hover::before,
+.main-header__toggle--close:hover::before {
   opacity: 50%;
 }
 
-.main-navigation__toggle:active {
+.main-header__toggle:focus-visible::before,
+.main-header__toggle--close:focus-visible::before {
+  opacity: 50%;
+}
+
+.main-header__toggle:active::before,
+.main-header__toggle--close:active::before {
   opacity: 30%;
 }
 
-.main-header__toggle--close::before {
-  mask-image: url("../../icons/stack.svg#close-button");
-  mask-size: 18px 18px;
+.main-header__toggle--nojs {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
