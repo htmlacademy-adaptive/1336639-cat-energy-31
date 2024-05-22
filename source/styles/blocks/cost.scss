@@ -6,8 +6,13 @@
   text-transform: uppercase;
 }
 
+.cost__key {
+  max-width: 150px;
+}
+
 .cost__value {
   margin: 0;
+  max-width: 100px;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,11 +26,13 @@
   .cost__key {
     font-size: 20px;
     line-height: 20px;
+    max-width: 200px;
   }
 
   .cost__value {
     font-size: 20px;
     line-height: 20px;
+    max-width: 200px;
   }
 }
 
@@ -33,7 +40,15 @@
   .cost {
     flex-direction: row;
     justify-content: flex-start;
-    max-width: 436px;
+    max-width: 366px;
     gap: 63px;
+  }
+
+  .cost__key {
+    max-width: 180px;
+  }
+
+  .cost__value {
+    max-width: 123px;
   }
 }

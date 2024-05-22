@@ -139,6 +139,7 @@
     font-size: 20px;
     line-height: 30px;
     padding: 0;
+    max-width: 340px;
   }
 
   .program--slim::before {
@@ -175,6 +176,10 @@
 @media (min-width: $desktop-width) {
   .program {
     padding: 77px 61px 55px 52px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .program__description {
@@ -213,5 +218,9 @@
     height: 56px;
     top: 67px;
     left: 33px;
+  }
+
+  .program__link {
+    max-width: 457px;
   }
 }

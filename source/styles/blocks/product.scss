@@ -25,13 +25,20 @@
   line-height: 14px;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 15px;
 }
 
 .product__link {
   text-decoration: none;
+}
+
+.product__key {
+  max-width: 150px;
+}
+
+.product__value {
+  max-width: 100px;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,10 +97,20 @@
   }
 
   .product__options {
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
   }
 
   .product__link {
     min-width: 244px;
+  }
+
+  .product__key {
+    max-width: 140px;
+  }
+
+  .product__value {
+    max-width: 100px;
   }
 }

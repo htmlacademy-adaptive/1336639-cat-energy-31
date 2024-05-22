@@ -82,11 +82,13 @@
     padding: 60px 78px 60px 80px;
     gap: 87px;
     max-width: 565px;
+    max-height: 250px;
     position: absolute;
     top: 95px;
     left: 50%;
     transform: translate(-107%);
     background-color: #ffffff;
+    align-items: start;
   }
 
   .contacts__address {
