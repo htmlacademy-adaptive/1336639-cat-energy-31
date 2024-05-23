@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -49,6 +51,9 @@
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <div class="promo__picture">
           <picture>
+            <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/promo-can-desktop@1x.webp 1x, images/promo-can-desktop@2x.webp 2x">
+            <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/promo-can-tablet@1x.webp 1x, images/promo-can-tablet@2x.webp 2x">
+            <source width="280" height="270" type="image/webp" srcset="images/promo-can-mobile@1x.webp, images/promo-can-mobile@2x.webp 2x">
             <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/promo-can-desktop@1x.png 1x, images/promo-can-desktop@2x.png 2x">
             <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo-can-tablet@1x.png 1x, images/promo-can-tablet@2x.png 2x">
             <img class="promo__image" src="images/promo-can-mobile@1x.png" srcset="images/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
@@ -105,11 +110,15 @@
         </div>
         <div class="example__slider slider">
           <picture>
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/slider-before-tablet-desktop@1x.webp 1x, images/slider-before-tablet-desktop@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/slider-before-mobile@1x.webp, images/slider-before-mobile@2x.webp 2x">
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-before-tablet-desktop@1x.png 1x, images/slider-before-tablet-desktop@2x.png 2x">
             <img class="slider__image slider__image--before" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фото до: толстенький котик">
           </picture>
           <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть ползунок</span></button>
           <picture>
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.webp 1x, images/slider-after-tablet-desktop@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/slider-after-mobile@1x.webp, images/slider-after-mobile@2x.webp 2x">
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.png 1x, images/slider-after-tablet-desktop@2x.png 2x">
             <img class="slider__image slider__image--after" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
           </picture>

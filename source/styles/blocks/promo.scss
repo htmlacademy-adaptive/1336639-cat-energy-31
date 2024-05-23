@@ -4,8 +4,10 @@
     $opacity-primary-color 302px,
     #ffffff 302px),
     image-set(
-      url("../../images/promo-bg-mobile@2x.jpg") 2x,
-      url("../../images/promo-bg-mobile@1x.jpg") 1x
+      url("../../images/promo-bg-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/promo-bg-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/promo-bg-mobile@2x.jpg") type("image/jpeg") 2x,
+      url("../../images/promo-bg-mobile@1x.jpg") type("image/jpeg") 1x
     ),
     linear-gradient(to right, #525156, #403f44);
   background-repeat: no-repeat;

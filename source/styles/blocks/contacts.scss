@@ -29,8 +29,10 @@
   height: 362px;
   background-image:
     image-set(
-      url("../../images/location-bg-mobile@2x.jpg") 2x,
-      url("../../images/location-bg-mobile@1x.jpg") 1x
+      url("../../images/location-bg-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/location-bg-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/location-bg-mobile@2x.jpg") type("image/jpeg") 2x,
+      url("../../images/location-bg-mobile@1x.jpg") type("image/jpeg") 1x
     );
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,8 +69,10 @@
     height: 400px;
     background-image:
       image-set(
-        url("../../images/location-bg-tablet@2x.jpg") 2x,
-        url("../../images/location-bg-tablet@1x.jpg") 1x
+        url("../../images/location-bg-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/location-bg-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/location-bg-tablet@2x.jpg") type("image/jpeg") 2x,
+        url("../../images/location-bg-tablet@1x.jpg") type("image/jpeg") 1x
       );
   }
 }
@@ -99,8 +103,10 @@
     height: 400px;
     background-image:
       image-set(
-        url("../../images/location-bg-desktop@2x.jpg") 2x,
-        url("../../images/location-bg-desktop@1x.jpg") 1x
+        url("../../images/location-bg-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/location-bg-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/location-bg-desktop@2x.jpg") type("image/jpeg") 2x,
+        url("../../images/location-bg-desktop@1x.jpg") type("image/jpeg") 1x
       );
   }
 }

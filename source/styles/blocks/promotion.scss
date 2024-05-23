@@ -4,8 +4,10 @@
   background-image:
     linear-gradient($opacity-primary-color, $opacity-primary-color),
     image-set(
-      url("../../images/promotion-bg-mobile@2x.jpg") 2x,
-      url("../../images/promotion-bg-mobile@1x.jpg") 1x
+      url("../../images/promotion-bg-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/promotion-bg-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/promotion-bg-mobile@2x.jpg") type("image/jpeg") 2x,
+      url("../../images/promotion-bg-mobile@1x.jpg") type("image/jpeg") 1x
     );
   background-repeat: no-repeat;
   text-align: center;
@@ -35,8 +37,10 @@
     background-image:
       linear-gradient($opacity-primary-color, $opacity-primary-color),
       image-set(
-        url("../../images/promotion-bg-tablet@2x.jpg") 2x,
-        url("../../images/promotion-bg-tablet@1x.jpg") 1x
+        url("../../images/promotion-bg-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/promotion-bg-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/promotion-bg-tablet@2x.jpg") type("image/jpeg") 2x,
+        url("../../images/promotion-bg-tablet@1x.jpg") type("image/jpeg") 1x
       );
     padding: 57px 125px 60px 77px;
     background-size: cover;
@@ -61,8 +65,10 @@
     background-image:
       linear-gradient($opacity-primary-color, $opacity-primary-color),
       image-set(
-        url("../../images/promotion-bg-desktop@2x.jpg") 2x,
-        url("../../images/promotion-bg-desktop@1x.jpg") 1x
+        url("../../images/promotion-bg-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/promotion-bg-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/promotion-bg-desktop@2x.jpg") type("image/jpeg") 2x,
+        url("../../images/promotion-bg-desktop@1x.jpg") type("image/jpeg") 1x
       );
     background-repeat: no-repeat;
     text-align: center;
