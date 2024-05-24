@@ -12,12 +12,36 @@
   display: block;
 }
 
+.card__image-link:hover {
+  opacity: 60%;
+}
+
+.card__image-link:focus-visible {
+  opacity: 60%;
+}
+
+.card__image-link:active {
+  opacity: 30%;
+}
+
 .card__title-link {
   @include font($secondary-font, 16px, 20px, $card-title-color);
   text-decoration: none;
   text-transform: uppercase;
   grid-area: title;
   display: block;
+}
+
+.card__title-link:hover {
+  opacity: 60%;
+}
+
+.card__title-link:focus-visible {
+  opacity: 60%;
+}
+
+.card__title-link:active {
+  opacity: 30%;
 }
 
 .card__title {

@@ -20,6 +20,18 @@
   margin: 0;
 }
 
+.product__title:hover {
+  opacity: 60%;
+}
+
+.product__title:focus-visible {
+  opacity: 60%;
+}
+
+.product__title:active {
+  opacity: 30%;
+}
+
 .product__options {
   font-size: 14px;
   line-height: 14px;

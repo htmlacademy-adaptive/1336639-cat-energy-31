@@ -29,6 +29,10 @@
   background-color: $button-secondary-action;
 }
 
+.button--secondary:focus-visible {
+  background-color: $button-secondary-action;
+}
+
 .button--secondary:active {
   background-color: $button-secondary-action;
   color: rgba(68, 68, 68, 0.3);

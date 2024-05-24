@@ -11,8 +11,8 @@
     ),
     linear-gradient(to right, #525156, #403f44);
   background-repeat: no-repeat;
-  background-position: 50% 0, 50% 0;
-  background-size: cover, auto 302px;
+  background-position: 50% top;
+  background-size: cover, 320px 302px;
 }
 
 .promo__heading {
@@ -85,7 +85,7 @@
     display: grid;
     grid-template-columns: 367px 552px;
     padding: 0 331px 52px 80px;
-    max-width: 1220px;
+    max-width: $max-desktop-container;
     margin: 0 auto;
   }
 
@@ -95,17 +95,17 @@
   }
 
   .promo__heading {
-    max-width: 420px;
+    max-width: 450px;
     grid-column: 1/3;
     grid-row: 1/2;
     display: block;
     margin: 0;
     margin-top: 81px;
+    word-wrap: break-word;
   }
 
   .promo__slogan {
-    margin: 0;
-    margin-top: 40px;
+    margin: 40px 0 52px;
   }
 
   .promo__link {

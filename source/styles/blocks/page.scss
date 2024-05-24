@@ -15,8 +15,10 @@
       #ffffff 50vw,
       $opacity-primary-color 50vw),
       image-set(
-        url("../../images/promo-bg-desktop@2x.jpg") 2x,
-        url("../../images/promo-bg-desktop@1x.jpg") 1x
+        url("../../images/promo-bg-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/promo-bg-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/promo-bg-desktop@2x.jpg") type("image/jpeg") 2x,
+        url("../../images/promo-bg-desktop@1x.jpg") type("image/jpeg") 1x
       ),
       linear-gradient(to right, #ffffff 50%, #403e41 50vw);
     background-position: 50%, 50vw 50%;
