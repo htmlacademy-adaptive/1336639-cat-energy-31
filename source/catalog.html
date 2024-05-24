@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Cat Energy: каталог продукции функционального питания для котов с большим разнообразием вкусов по программам похудения и набора массы">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
@@ -16,7 +17,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header" data-test="header">
     <div class="main-header__wrapper">
       <a class="main-header__logotype logotype" href="index.html">
         <picture>
@@ -46,7 +47,7 @@
   </header>
   <main class="main-container">
     <h1 class="main-container__heading">Каталог продукции</h1>
-    <section class="main-container__catalog catalog">
+    <section class="main-container__catalog catalog" data-test="catalog">
       <h2 class="visually-hidden">Карточки товаров</h2>
       <ul class="catalog__list">
         <li class="catalog__item card">
@@ -57,7 +58,7 @@
               <source width="140" height="107" type="image/webp" srcset="images/card-chicken500-mobile@1x.webp, images/card-chicken500-mobile@2x.webp 2x">
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-chicken500-desktop@1x.png 1x, images/card-chicken500-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-chicken500-tablet@1x.png 1x, images/card-chicken500-tablet@2x.png 2x">
-              <img class="card__image" src="images/card-chicken500-mobile@1x.png" srcset="images/card-chicken500-mobile@2x.png 2x" width="140" height="107" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы объемом 500 г">
+              <img class="card__image" src="images/card-chicken500-mobile@1x.png" srcset="images/card-chicken500-mobile@2x.png 2x" width="140" height="107" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы объемом 500 г" fetchpriority="high">
             </picture>
           </a>
           <a class="card__title-link" href="#">
@@ -87,7 +88,7 @@
               <source width="140" height="107" type="image/webp" srcset="images/card-chicken1000-mobile@1x.webp, images/card-chicken1000-mobile@2x.webp 2x">
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-chicken1000-desktop@1x.png 1x, images/card-chicken1000-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-chicken1000-tablet@1x.png 1x, images/card-chicken1000-tablet@2x.png 2x">
-              <img class="card__image" src="images/card-chicken1000-mobile@1x.png" srcset="images/card-chicken1000-mobile@2x.png 2x" width="140" height="107" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы объемом 1000 г">
+              <img class="card__image" src="images/card-chicken1000-mobile@1x.png" srcset="images/card-chicken1000-mobile@2x.png 2x" width="140" height="107" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы объемом 1000 г" fetchpriority="high">
             </picture>
           </a>
           <a class="card__title-link" href="#">
@@ -117,7 +118,7 @@
               <source width="140" height="107" type="image/webp" srcset="images/card-fish500-mobile@1x.webp, images/card-fish500-mobile@2x.webp 2x">
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-fish500-desktop@1x.png 1x, images/card-fish500-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-fish500-tablet@1x.png 1x, images/card-fish500-tablet@2x.png 2x">
-              <img class="card__image" src="images/card-fish500-mobile@1x.png" srcset="images/card-fish500-mobile@2x.png 2x" width="140" height="107" alt="Зеленая банка с питанием Cat Energy со вкусом рыбы объемом 500 г">
+              <img class="card__image" src="images/card-fish500-mobile@1x.png" srcset="images/card-fish500-mobile@2x.png 2x" width="140" height="107" alt="Зеленая банка с питанием Cat Energy со вкусом рыбы объемом 500 г" loading="lazy">
             </picture>
           </a>
           <a class="card__title-link" href="#">
@@ -147,7 +148,7 @@
               <source width="140" height="107" type="image/webp" srcset="images/card-fish1000-mobile@1x.webp, images/card-fish1000-mobile@2x.webp 2x">
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-fish1000-desktop@1x.png 1x, images/card-fish1000-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-fish1000-tablet@1x.png 1x, images/card-fish1000-tablet@2x.png 2x">
-              <img class="card__image" src="images/card-fish1000-mobile@1x.png" srcset="images/card-fish1000-mobile@2x.png 2x" width="140" height="107" alt="Зеленая банка с питанием Cat Energy со вкусом рыбы объемом 1000 г">
+              <img class="card__image" src="images/card-fish1000-mobile@1x.png" srcset="images/card-fish1000-mobile@2x.png 2x" width="140" height="107" alt="Зеленая банка с питанием Cat Energy со вкусом рыбы объемом 1000 г" loading="lazy">
             </picture>
           </a>
           <a class="card__title-link" href="#">
@@ -177,7 +178,7 @@
               <source width="140" height="107" type="image/webp" srcset="images/card-buckwheat500-mobile@1x.webp, images/card-buckwheat500-mobile@2x.webp 2x">
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-buckwheat500-desktop@1x.png 1x, images/card-buckwheat500-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-buckwheat500-tablet@1x.png 1x, images/card-buckwheat500-tablet@2x.png 2x">
-              <img class="card__image" src="images/card-buckwheat500-mobile@1x.png" srcset="images/card-buckwheat500-mobile@2x.png 2x" width="140" height="107" alt="Голубая банка с питанием Cat Energy со вкусом гречки объемом 500 г">
+              <img class="card__image" src="images/card-buckwheat500-mobile@1x.png" srcset="images/card-buckwheat500-mobile@2x.png 2x" width="140" height="107" alt="Голубая банка с питанием Cat Energy со вкусом гречки объемом 500 г" loading="lazy">
             </picture>
           </a>
           <a class="card__title-link" href="#">
@@ -207,7 +208,7 @@
               <source width="140" height="107" type="image/webp" srcset="images/card-buckwheat1000-mobile@1x.webp, images/card-buckwheat1000-mobile@2x.webp 2x">
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-buckwheat1000-desktop@1x.png 1x, images/card-buckwheat1000-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-buckwheat1000-tablet@1x.png 1x, images/card-buckwheat1000-tablet@2x.png 2x">
-              <img class="card__image" src="images/card-buckwheat1000-mobile@1x.png" srcset="images/card-buckwheat1000-mobile@2x.png 2x" width="140" height="107" alt="Голубая банка с питанием Cat Energy со вкусом гречки объемом 1000 г">
+              <img class="card__image" src="images/card-buckwheat1000-mobile@1x.png" srcset="images/card-buckwheat1000-mobile@2x.png 2x" width="140" height="107" alt="Голубая банка с питанием Cat Energy со вкусом гречки объемом 1000 г" loading="lazy">
             </picture>
           </a>
           <a class="card__title-link" href="#">
@@ -237,7 +238,7 @@
               <source width="140" height="107" type="image/webp" srcset="images/card-rice500-mobile@1x.webp, images/card-rice500-mobile@2x.webp 2x">
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-rice500-desktop@1x.png 1x, images/card-rice500-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-rice500-tablet@1x.png 1x, images/card-rice500-tablet@2x.png 2x">
-              <img class="card__image" src="images/card-rice500-mobile@1x.png" srcset="images/card-rice500-mobile@2x.png 2x" width="140" height="107" alt="Фиолетовая банка с питанием Cat Energy со вкусом риса объемом 500 г">
+              <img class="card__image" src="images/card-rice500-mobile@1x.png" srcset="images/card-rice500-mobile@2x.png 2x" width="140" height="107" alt="Фиолетовая банка с питанием Cat Energy со вкусом риса объемом 500 г" loading="lazy">
             </picture>
           </a>
           <a class="card__title-link" href="#">
@@ -268,7 +269,7 @@
         </li>
       </ul>
     </section>
-    <section class="main-container__additional-products additional-products">
+    <section class="main-container__additional-products additional-products" data-test="additional">
       <h2 class="additional-products__heading">Дополнительные товары</h2>
       <div class="additional-products__wrapper">
         <ul class="additional-products__list">
@@ -329,7 +330,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="main-footer__contacts contacts contacts--accent">
+    <section class="main-footer__contacts contacts contacts--accent" data-test="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Наши контакты</h2>
         <p class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</p>
@@ -339,10 +340,10 @@
         </address>
       </div>
       <div class="contacts__map">
-        <iframe class="contacts__map-widget" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0fdb1c5dfb9f3c34e1f1362539d3a3e611ed2d3d4f666ad9c6ae9284580a4cb1&amp;source=constructor" width="320" height="362" title="Адрес офиса компании: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"></iframe>
+        <iframe class="contacts__map-widget" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0fdb1c5dfb9f3c34e1f1362539d3a3e611ed2d3d4f666ad9c6ae9284580a4cb1&amp;source=constructor" width="320" height="362" title="Адрес офиса компании: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8" loading="lazy"></iframe>
       </div>
     </section>
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper" data-test="footer">
       <a class="main-footer__logotype logotype" href="index.html">
         <img class="logotype__name" src="images/logotype-name.svg" width="128" height="24" alt="Товарный знак Cat Energy">
       </a>

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Cat Energy: функциональное питание для котов, программы для похудения и набора массы, живые примеры результатов клиентов">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
@@ -16,7 +17,7 @@
 </head>
 
 <body class="page__body page__body--index">
-  <header class="page__main-header main-header">
+  <header class="page__main-header main-header" data-test="header">
     <div class="main-header__wrapper">
       <a class="main-header__logotype logotype logotype--current-page" href="#" tabindex="-1">
         <picture>
@@ -45,7 +46,7 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="main-container__promo promo">
+    <section class="main-container__promo promo" data-test="hero">
       <div class="promo__container">
         <h1 class="promo__heading">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
@@ -56,13 +57,13 @@
             <source width="280" height="270" type="image/webp" srcset="images/promo-can-mobile@1x.webp, images/promo-can-mobile@2x.webp 2x">
             <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/promo-can-desktop@1x.png 1x, images/promo-can-desktop@2x.png 2x">
             <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo-can-tablet@1x.png 1x, images/promo-can-tablet@2x.png 2x">
-            <img class="promo__image" src="images/promo-can-mobile@1x.png" srcset="images/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
+            <img class="promo__image" src="images/promo-can-mobile@1x.png" srcset="images/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы" fetchpriority="high">
           </picture>
         </div>
         <a class="promo__link button button--primary" href="#">Подобрать программу</a>
       </div>
     </section>
-    <section class="main-container__programs programs">
+    <section class="main-container__programs programs" data-test="programs">
       <h2 class="visually-hidden">Наши программы питания</h2>
       <ul class="programs__list">
         <li class="programs__item program program--slim">
@@ -77,7 +78,7 @@
         </li>
       </ul>
     </section>
-    <section class="main-container__benefits benefits">
+    <section class="main-container__benefits benefits" data-test="features">
       <h2 class="benefits__heading">Как это работает</h2>
       <ol class="benefits__list">
         <li class="benefits__item benefits__item--nutrients">Функциональное питание содержит только полезные питательные вещества.</li>
@@ -86,7 +87,7 @@
         <li class="benefits__item benefits__item--effect">Уже через месяц наслаждайтесь изменениями к лучшему <br class="benefits__item-text">вашего питомца!</li>
       </ol>
     </section>
-    <section class="main-container__example example">
+    <section class="main-container__example example" data-test="proof">
       <div class="example__container">
         <div class="example__info">
           <h2 class="example__heading">Живой пример</h2>
@@ -113,21 +114,21 @@
             <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/slider-before-tablet-desktop@1x.webp 1x, images/slider-before-tablet-desktop@2x.webp 2x">
             <source width="280" height="256" type="image/webp" srcset="images/slider-before-mobile@1x.webp, images/slider-before-mobile@2x.webp 2x">
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-before-tablet-desktop@1x.png 1x, images/slider-before-tablet-desktop@2x.png 2x">
-            <img class="slider__image slider__image--before" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фото до: толстенький котик">
+            <img class="slider__image slider__image--before" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фото до: толстенький котик" loading="lazy">
           </picture>
           <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть ползунок</span></button>
           <picture>
             <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.webp 1x, images/slider-after-tablet-desktop@2x.webp 2x">
             <source width="280" height="256" type="image/webp" srcset="images/slider-after-mobile@1x.webp, images/slider-after-mobile@2x.webp 2x">
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.png 1x, images/slider-after-tablet-desktop@2x.png 2x">
-            <img class="slider__image slider__image--after" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
+            <img class="slider__image slider__image--after" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик" loading="lazy">
           </picture>
         </div>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <section class="main-footer__contacts contacts">
+    <section class="main-footer__contacts contacts" data-test="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Наши контакты</h2>
         <p class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</p>
@@ -137,10 +138,10 @@
         </address>
       </div>
       <div class="contacts__map">
-        <iframe class="contacts__map-widget" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0fdb1c5dfb9f3c34e1f1362539d3a3e611ed2d3d4f666ad9c6ae9284580a4cb1&amp;source=constructor" width="320" height="362" title="Адрес офиса компании: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"></iframe>
+        <iframe class="contacts__map-widget" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0fdb1c5dfb9f3c34e1f1362539d3a3e611ed2d3d4f666ad9c6ae9284580a4cb1&amp;source=constructor" width="320" height="362" title="Адрес офиса компании: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8" loading="lazy"></iframe>
       </div>
     </section>
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper" data-test="footer">
       <a class="main-footer__logotype logotype" href="index.html">
         <img class="logotype__name" src="images/logotype-name.svg" width="128" height="24" alt="Товарный знак Cat Energy">
       </a>
