@@ -46,10 +46,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .subscribe {
-    max-width: $max-desktop-container;
-  }
-
   .subscribe__heading {
     font-size: 40px;
     line-height: 40px;
@@ -63,5 +59,6 @@
 
   .subscribe__form {
     margin: 0 auto;
+    width: 752px;
   }
 }

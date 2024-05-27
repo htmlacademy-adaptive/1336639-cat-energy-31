@@ -23,10 +23,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog {
-    max-width: $max-desktop-container;
-  }
-
   .catalog__list {
     padding: 0;
     display: flex;

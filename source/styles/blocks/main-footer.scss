@@ -24,6 +24,7 @@
 .main-footer__social {
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,12 +42,24 @@
 
   .main-footer__social {
     border: none;
+    max-width: 300px;
+  }
+
+  .main-footer__copyright {
+    max-width: 170px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .main-footer {
     background-color: $accent-background;
+  }
+
+  .main-footer__contacts {
+    display: grid;
+    grid-template-columns: auto 565px 90px 565px auto;
+    grid-template-rows: 95px auto 106px;
   }
 
   .main-footer__wrapper {

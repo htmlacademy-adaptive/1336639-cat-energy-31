@@ -51,7 +51,7 @@
   }
 
   .main-container__example {
-    background-image: linear-gradient(to bottom, #ffffff 619px, $extra-background 619px);
+    background-image: linear-gradient(to bottom, #ffffff 57%, $extra-background 43%);
   }
 
   .main-container__heading {
@@ -73,11 +73,13 @@
 
   .main-container__programs {
     margin: 0 auto 71px;
+    max-width: $max-desktop-container;
   }
 
   .main-container__benefits {
     border: none;
     margin-bottom: 69px;
+    max-width: $max-desktop-container;
   }
 
   .main-container__example {
@@ -93,14 +95,17 @@
 
   .main-container__catalog {
     margin: 0 auto 71px;
+    max-width: $max-desktop-container;
   }
 
   .main-container__additional-products {
     margin-bottom: 96px;
+    max-width: $max-desktop-container;
   }
 
   .main-container__subscribe {
     margin: 0 auto 104px;
     padding: 0;
+    max-width: $max-desktop-container;
   }
 }

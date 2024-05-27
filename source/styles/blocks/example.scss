@@ -30,6 +30,8 @@
 
 .example__slider {
   margin: 0 auto;
+  width: 280px;
+  height: 256px;
 }
 
 @media (min-width: $tablet-width) {
@@ -49,10 +51,19 @@
     margin-bottom: 55px;
   }
 
+  .example__list {
+    max-width: 400px;
+  }
+
   .example__wrapper {
     justify-content: space-between;
     margin-bottom: 99px;
     flex-flow: row wrap;
+  }
+
+  .example__slider {
+    width: 560px;
+    height: 512px;
   }
 }
 
@@ -68,6 +79,10 @@
   .example__text {
     max-width: 432px;
     margin-bottom: 69px;
+  }
+
+  .example__list {
+    max-width: 366px;
   }
 
   .example__container {

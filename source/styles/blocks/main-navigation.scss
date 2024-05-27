@@ -15,10 +15,11 @@
   flex-direction: column;
   background-color: #ffffff;
   width: 100%;
+  top: 66px;
 }
 
 .main-navigation__item {
-  padding: 22px 20px 24px;
+  padding: 22px 20px 23px;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -26,6 +27,7 @@
   @include font($secondary-font, 20px, 20px, $heading-color);
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
 }
 
 .main-navigation__link:hover:not(.main-navigation__link--current) {

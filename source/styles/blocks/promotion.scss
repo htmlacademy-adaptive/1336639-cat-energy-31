@@ -1,6 +1,5 @@
 .promotion {
   @include font($primary-font, 16px, 20px, $light-text);
-  margin: 0;
   background-image:
     linear-gradient($opacity-primary-color, $opacity-primary-color),
     image-set(
@@ -10,10 +9,11 @@
       url("../../images/promotion-bg-mobile@1x.jpg") type("image/jpeg") 1x
     );
   background-repeat: no-repeat;
-  text-align: center;
-  background-position: center;
+  background-position: top;
   background-size: contain;
+  text-align: center;
   padding: 59px 61px 43px 58px;
+  background-color: #9d9d9d;
 }
 
 .promotion__text {
@@ -43,8 +43,9 @@
         url("../../images/promotion-bg-tablet@1x.jpg") type("image/jpeg") 1x
       );
     padding: 57px 125px 60px 77px;
-    background-size: cover;
-    background-position: 50% 0, 0 60%;
+    background-position: center;
+    background-size: 708px 200px;
+    background-color: $opacity-primary-color;
   }
 
   .promotion__text {
@@ -72,10 +73,10 @@
       );
     background-repeat: no-repeat;
     text-align: center;
-    background-position: center;
+    background-position: top;
     background-size: contain;
-    width: 245px;
     padding: 56px 42px 43px;
+    background-color: #9d9d9d;
   }
 
   .promotion__text {

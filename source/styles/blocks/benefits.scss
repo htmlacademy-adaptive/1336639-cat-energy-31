@@ -36,6 +36,7 @@
   height: 60px;
   background-color: $primary-color;
   flex-shrink: 0;
+  align-self: flex-start;
 }
 
 .benefits__item--nutrients::before {
@@ -123,7 +124,6 @@
 @media (min-width: $desktop-width) {
   .benefits {
     padding: 0;
-    max-width: $max-desktop-container;
   }
 
   .benefits__heading {

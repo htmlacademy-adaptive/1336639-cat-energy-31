@@ -2,12 +2,15 @@
   padding: 13px 20px 14px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #d9d9d9;
 }
 
+.main-header__logotype {
+  height: 38px;
+}
+
 .main-header__toggle {
-  min-width: 24px;
-  min-height: 24px;
   background-color: inherit;
   border: none;
   padding: 0;
@@ -69,14 +72,13 @@
   .main-header__wrapper {
     border: none;
     padding: 0;
+    align-self: flex-start;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
-    min-width: $max-desktop-container;
-    margin: 55px auto 29px;
-    padding: 0;
+    padding: 55px 0 29px;
   }
 
   .main-header__wrapper {

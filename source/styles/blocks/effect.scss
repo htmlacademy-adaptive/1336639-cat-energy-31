@@ -37,7 +37,7 @@
 @media (min-width: $tablet-width) {
   .effect {
     gap: 43px;
-    max-width: 400px;
+    justify-content: flex-start;
   }
 
   .effect__item {
@@ -62,7 +62,6 @@
 
 @media (min-width: $desktop-width) {
   .effect {
-    max-width: 366px;
     gap: 42px;
   }
 

@@ -48,12 +48,14 @@
   font: inherit;
   margin: 0;
   max-width: 76px;
+  margin-bottom: 14px;
 }
 
 .card__options {
   font-size: 12px;
   line-height: 16px;
   margin: 0;
+  margin-bottom: 4px;
   grid-area: properties;
 }
 
@@ -173,5 +175,15 @@
 
   .card--to-all .card__text {
     margin-bottom: 82px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    display: block;
+  }
+
+  .card__title {
+    margin: 0 auto 23px;
   }
 }

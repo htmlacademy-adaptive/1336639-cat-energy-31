@@ -1,6 +1,5 @@
 .social-list {
   list-style-type: none;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -70,6 +69,5 @@
 @media (min-width: $tablet-width) {
   .social-list {
     padding: 0;
-    max-width: 300px;
   }
 }

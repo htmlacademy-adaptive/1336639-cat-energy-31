@@ -1,8 +1,8 @@
 .promo {
   background-image:
     linear-gradient(to bottom,
-    $opacity-primary-color 302px,
-    #ffffff 302px),
+    $opacity-primary-color 63%,
+    #ffffff 37%),
     image-set(
       url("../../images/promo-bg-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/promo-bg-mobile@1x.webp") type("image/webp") 1x,
@@ -13,14 +13,20 @@
   background-repeat: no-repeat;
   background-position: 50% top;
   background-size: cover, 320px 302px;
+  background-color: $opacity-primary-color;
+}
+
+.promo__container {
+  min-height: 480px;
 }
 
 .promo__heading {
   @include font($secondary-font, 36px, 36px, $light-text);
-  padding-top: 27px;
+  padding: 27px 20px 0;
   margin: 0;
   margin-bottom: 25px;
   text-align: center;
+  min-height: 72px;
 }
 
 .promo__slogan {
@@ -29,11 +35,14 @@
   margin: 0;
   margin-bottom: 29px;
   text-align: center;
+  padding: 0 20px;
 }
 
 .promo__image {
   display: block;
   margin: 0 auto;
+  min-height: 270px;
+  margin-bottom: 3px;
 }
 
 .promo__link {
@@ -46,7 +55,11 @@
   .promo {
     background: none;
     padding: 40px 30px 0;
+  }
+
+  .promo__container {
     position: relative;
+    padding-bottom: 580px;
   }
 
   .promo__heading {
@@ -54,25 +67,36 @@
     margin-left: 90px;
     margin-bottom: 40px;
     max-width: 430px;
+    min-height: 120px;
     text-align: left;
     padding: 0;
   }
 
   .promo__slogan {
     @include font($secondary-font, 20px, 20px, $heading-color);
-    margin-left: 90px;
+    margin: 0 auto 50px 90px;
     text-align: left;
+    padding: 0;
+  }
+
+  .promo__image {
+    display: block;
+    width: 709px;
+    height: 609px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
   }
 
   .promo__link {
-    position: absolute;
     width: 244px;
     margin: 0;
-    bottom: 526px;
-    left: 120px;
     font-size: 20px;
     line-height: 26px;
     padding: 14px;
+    display: block;
+    position: absolute;
+    left: 90px;
   }
 }
 
@@ -84,6 +108,7 @@
   .promo__container {
     display: grid;
     grid-template-columns: 367px 552px;
+    grid-template-rows: 201px 112px auto;
     padding: 0 331px 52px 80px;
     max-width: $max-desktop-container;
     margin: 0 auto;
@@ -92,6 +117,8 @@
   .promo__picture {
     grid-column: 2/3;
     grid-row: 1/4;
+    width: 552px;
+    height: 499px;
   }
 
   .promo__heading {
@@ -111,5 +138,11 @@
   .promo__link {
     position: unset;
     margin-bottom: auto;
+  }
+
+  .promo__image {
+    width: 552px;
+    height: 499px;
+    position: unset;
   }
 }
