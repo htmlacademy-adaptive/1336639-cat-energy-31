@@ -44,9 +44,9 @@
 .main-header__toggle--close::before {
   background-color: #000000;
   mask-image: url("../../icons/stack.svg#close-button");
-  mask-size: 18px 18px;
-  min-width: 18px;
-  min-height: 18px;
+  mask-size: 19px 19px;
+  min-width: 19px;
+  min-height: 19px;
 }
 
 .main-header__toggle:hover::before,
@@ -89,6 +89,10 @@
 
   .main-header__logotype {
     height: 50px;
+  }
+
+  .main-header__main-navigation {
+    max-width: 440px;
   }
 }
 
