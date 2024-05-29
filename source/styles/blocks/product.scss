@@ -99,6 +99,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin-top: 3px;
   }
 
   .product__link {
@@ -111,5 +112,6 @@
 
   .product__value {
     max-width: 100px;
+    text-align: left;
   }
 }

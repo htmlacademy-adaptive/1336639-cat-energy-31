@@ -194,9 +194,46 @@
 @media (min-width: $desktop-width) {
   .card {
     display: block;
+    padding: 0 38px 40px;
+  }
+
+  .card__image-link {
+    width: 169px;
+    height: 210px;
+    margin: 10px auto 12px;
   }
 
   .card__title {
-    margin: 0 auto 23px;
+    margin: 0 15px 23px;
+  }
+
+  .card__option {
+    padding-bottom: 6px;
+  }
+
+  .card__option:not(:first-child) {
+    padding-top: 7px;
+  }
+
+  .card__key:nth-child(2) {
+    padding: 2px 0;
+  }
+
+  .card__option:last-child {
+    padding-top: 5px;
+    padding-bottom: 9px;
+  }
+
+  .card__title-link--to-all {
+    padding-top: 98px;
+    margin-top: 50px;
+  }
+
+  .card--to-all .card__title {
+    margin-bottom: 25px;
+  }
+
+  .card--to-all .card__text {
+    margin-bottom: 90px;
   }
 }

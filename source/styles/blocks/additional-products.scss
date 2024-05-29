@@ -77,6 +77,11 @@
     padding: 0;
   }
 
+  .additional-products__list {
+    border: none;
+    margin-bottom: 0;
+  }
+
   .additional-products__item:first-child {
     border-top: 1px solid #cdcdcd;
   }
@@ -111,5 +116,6 @@
     min-width: 245px;
     min-height: 288px;
     align-self: flex-start;
+    margin-top: 1px;
   }
 }
