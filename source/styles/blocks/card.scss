@@ -115,14 +115,18 @@
       "button";
     justify-items: center;
     padding: 0 37px 40px;
+    grid-template-columns: none;
   }
 
   .card__image-link {
-    margin: 10px auto 22px;
+    margin: 10px auto 19px;
+    height: 214px;
   }
 
   .card__title {
-    margin-bottom: 20px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 19px;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
@@ -142,11 +146,12 @@
   }
 
   .card__option:not(:first-child) {
-    padding-top: 5px;
+    padding-top: 7px;
   }
 
   .card__link {
     width: 100%;
+    margin-top: 0;
   }
 
   .card--to-all {
@@ -160,6 +165,8 @@
   .card__text {
     font-size: 16px;
     line-height: 18px;
+    width: 170px;
+    margin: 0 auto;
   }
 
   .card__title-link--to-all {
@@ -168,6 +175,11 @@
 
   .card__title-link--icon {
     background-size: 60px 60px;
+  }
+
+  .card__title--to-all {
+    width: 134px;
+    margin: 0 auto;
   }
 
   .card--to-all .card__title {

@@ -50,12 +50,17 @@
     padding: 0 30px;
   }
 
-  .additional-products__item {
-    border: 1px solid $accent-background;
+  .additional-products__list {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 69px;
   }
 
   .additional-products__item:first-child {
-    border-top: 1px solid $accent-background;
+    border-top: none;
+  }
+
+  .additional-products__item:last-child {
+    border-bottom: none;
   }
 
   .additional-products__heading {
@@ -64,10 +69,6 @@
     padding: 0;
     margin-bottom: 80px;
     margin-left: 40px;
-  }
-
-  .additional-products__item:last-child {
-    margin-bottom: 70px;
   }
 }
 

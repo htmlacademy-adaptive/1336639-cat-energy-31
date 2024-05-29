@@ -55,7 +55,7 @@
       "title  options"
       "button button";
     gap: 25px;
-    padding: 25px 37px 27px;
+    padding: 25px 37px 28px;
   }
 
   .product__title-link {
@@ -72,6 +72,11 @@
     justify-content: flex-end;
     gap: 50px;
     padding: 0;
+  }
+
+  .product__value {
+    margin: 0;
+    margin-right: 2px;
   }
 
   .product__link {

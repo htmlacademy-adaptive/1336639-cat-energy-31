@@ -57,6 +57,8 @@
 
   .promotion__text::before {
     margin-bottom: 0;
+    min-width: 80px;
+    min-height: 83px;
   }
 }
 
