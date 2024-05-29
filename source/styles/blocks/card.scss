@@ -5,6 +5,7 @@
     "image  properties"
     "button button";
   padding: 20px 20px 24px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card__image-link {
@@ -46,9 +47,8 @@
 
 .card__title {
   font: inherit;
-  margin: 0;
+  margin: 1px 0 13px;
   max-width: 76px;
-  margin-bottom: 14px;
 }
 
 .card__options {
@@ -73,11 +73,12 @@
 .card__link {
   text-decoration: none;
   grid-area: button;
+  margin-top: 13px;
 }
 
 .card--to-all {
   display: block;
-  padding: 25px 20px 24px;
+  padding: 25px 20px 23px;
 }
 
 .card--to-all .card__title {

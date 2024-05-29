@@ -6,9 +6,7 @@
 .program__title {
   @include font($secondary-font, 24px, 37px, $heading-color);
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 29px;
-  margin-left: 70px;
+  margin: 0 0 29px 71px;
 }
 
 .program__link {
@@ -17,7 +15,7 @@
   text-transform: uppercase;
   display: flex;
   gap: 15px;
-  padding-top: 15px;
+  padding: 19px 0 4px;
 }
 
 .program__link::after {
@@ -115,7 +113,7 @@
 
 @media (min-width: $tablet-width) {
   .program {
-    padding: 77px 63px 53px 52px;
+    padding: 77px 63px 53px 53px;
   }
 
   .program__title {
@@ -138,8 +136,9 @@
   .program__link {
     font-size: 20px;
     line-height: 30px;
-    padding: 0;
     max-width: 340px;
+    padding: 4px 0;
+    gap: 25px;
   }
 
   .program--slim::before {

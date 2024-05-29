@@ -2,23 +2,43 @@
   text-decoration: none;
   display: flex;
   gap: 56px;
-  align-items: center;
+  align-items: stretch;
 }
 
-.logotype:hover:not(.logotype--current-page) {
-  opacity: 80%;
+.logotype__name {
+  margin: 12px 0 7px;
 }
 
-.logotype:focus-visible:not(.logotype--current-page) {
-  opacity: 80%;
-}
-
-.logotype:active:not(.logotype--current-page) {
-  opacity: 60%;
+.logotype__name--footer {
+  width: 128px;
+  height: 24px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .logotype {
     gap: 13px;
+  }
+
+  .logotype__name {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logotype {
+    gap: 14px;
+  }
+
+  .logotype__name {
+    width: 118px;
+    height: 21px;
+    align-self: center;
+    margin: 0;
+  }
+
+  .logotype__name--footer {
+    width: 128px;
+    height: 24px;
   }
 }

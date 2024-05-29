@@ -7,15 +7,15 @@
 .form__input {
   @include font($secondary-font, 20px, 30px, inherit);
   text-transform: uppercase;
-  padding: 13px;
+  padding: 12px;
   border: 1px solid #e7e7e7;
 }
 
-.form__input:hover {
+.form__input:hover:not(:disabled) {
   border-color: #cdcdcd;
 }
 
-.form__input:focus-visible {
+.form__input:focus-visible:not(:disabled) {
   border: 2px solid $base-text-color;
 }
 
@@ -23,10 +23,19 @@
   border: 2px solid #ff8282;
 }
 
+.form__input:disabled {
+  opacity: 0.3;
+}
+
 .form__button {
   font-size: 20px;
   line-height: 26px;
   width: 100%;
+  padding: 15px;
+}
+
+.form__button:disabled {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

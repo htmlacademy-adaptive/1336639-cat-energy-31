@@ -1,12 +1,12 @@
 .main-footer__wrapper {
   background-color: $accent-background;
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 .main-footer__logotype {
   display: block;
   text-align: center;
-  padding-bottom: 19px;
+  padding: 20px 0 15px;
 }
 
 .main-footer__logotype:hover {
@@ -38,11 +38,16 @@
 
   .main-footer__logotype {
     padding: 0;
+    width: 128px;
+    height: 24px;
+    margin: 6px 0;
   }
 
   .main-footer__social {
     border: none;
     max-width: 300px;
+    margin: 9px 0 7px;
+    margin-left: 35px;
   }
 
   .main-footer__copyright {
@@ -66,5 +71,14 @@
     padding: 67px 0;
     max-width: 1220px;
     margin: 0 auto;
+  }
+
+  .main-footer__logotype {
+    width: 128px;
+    height: 24px;
+  }
+
+  .main-footer__social {
+    margin: 7px 0 7px 35px;
   }
 }

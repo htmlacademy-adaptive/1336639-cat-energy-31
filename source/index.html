@@ -19,7 +19,7 @@
 <body class="page__body page__body--index">
   <header class="page__main-header main-header" data-test="header">
     <div class="main-header__wrapper">
-      <a class="main-header__logotype logotype logotype--current-page" href="#" tabindex="-1">
+      <a class="main-header__logotype main-header__logotype--current-page logotype" href="#" tabindex="-1">
         <picture>
           <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logotype-picture-desktop.svg">
           <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logotype-picture-tablet.svg">
@@ -81,10 +81,18 @@
     <section class="main-container__benefits benefits" data-test="features">
       <h2 class="benefits__heading">Как это работает</h2>
       <ol class="benefits__list">
-        <li class="benefits__item benefits__item--nutrients">Функциональное питание содержит только полезные питательные вещества.</li>
-        <li class="benefits__item benefits__item--consistency">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-        <li class="benefits__item benefits__item--meal">Замените один-два приема обычной еды на наше функциональное питание.</li>
-        <li class="benefits__item benefits__item--effect">Уже через месяц наслаждайтесь изменениями к лучшему <br class="benefits__item-text">вашего питомца!</li>
+        <li class="benefits__item benefits__item--nutrients">
+          <p class="benefits__description">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="benefits__item benefits__item--consistency">
+          <p class="benefits__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        </li>
+        <li class="benefits__item benefits__item--meal">
+          <p class="benefits__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        </li>
+        <li class="benefits__item benefits__item--effect">
+          <p class="benefits__description">Уже через месяц наслаждайтесь изменениями к лучшему <br class="benefits__item-text">вашего питомца!</p>
+        </li>
       </ol>
     </section>
     <section class="main-container__example example" data-test="proof">
@@ -104,7 +112,7 @@
               </div>
             </dl>
             <dl class="example__cost cost">
-              <dt class="cost__key">Затраты на питание:&nbsp;</dt>
+              <dt class="cost__key">Затраты на питание:</dt>
               <dd class="cost__value">15 000 руб.</dd>
             </dl>
           </div>
@@ -131,7 +139,7 @@
     <section class="main-footer__contacts contacts" data-test="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__cooperation">Приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="contacts__address">
           <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
           <span class="contacts__city">Санкт-Петербург</span>
@@ -143,7 +151,7 @@
     </section>
     <div class="main-footer__wrapper" data-test="footer">
       <a class="main-footer__logotype logotype" href="index.html">
-        <img class="logotype__name" src="images/logotype-name.svg" width="128" height="24" alt="Товарный знак Cat Energy">
+        <img class="logotype__name logotype__name--footer" src="images/logotype-name.svg" width="128" height="24" alt="Товарный знак Cat Energy">
       </a>
       <ul class="main-footer__social social-list">
         <li class="social-list__item">

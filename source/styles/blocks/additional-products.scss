@@ -12,9 +12,7 @@
 
 .additional-products__heading {
   @include font($secondary-font, 24px, 24px, $heading-color);
-  margin: 0;
-  margin-top: 25px;
-  margin-bottom: 36px;
+  margin: 25px 0 35px;
   background-color: #ffffff;
   width: fit-content;
   max-width: 85%;
@@ -39,10 +37,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.additional-products__item:last-child {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .additional-products__promotion {

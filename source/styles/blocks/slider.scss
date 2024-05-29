@@ -1,6 +1,6 @@
 .slider {
   display: grid;
-  grid-template-columns: 140px auto 140px;
+  grid-template-columns: 138px auto 138px;
 }
 
 .slider__image {
@@ -85,9 +85,13 @@
   opacity: 60%;
 }
 
+.slider__button:disabled {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .slider {
-    grid-template-columns: 280px auto 280px;
+    grid-template-columns: 278px auto 278px;
   }
 
   .slider__image {

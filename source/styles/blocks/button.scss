@@ -16,6 +16,10 @@
   background-color: $button-action;
 }
 
+.button--primary:focus-visible {
+  background-color: $button-action;
+}
+
 .button--primary:active {
   background-color: $button-action;
   color: rgba(255, 255, 255, 0.3);

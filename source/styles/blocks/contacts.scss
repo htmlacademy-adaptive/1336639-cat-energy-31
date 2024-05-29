@@ -7,7 +7,7 @@
 }
 
 .contacts__cooperation {
-  @include font($secondary-font, 16px, 30px, #111111);
+  @include font($secondary-font, 16px, 20px, #111111);
   text-transform: uppercase;
   margin: 0;
 }
@@ -81,7 +81,7 @@
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     padding: 60px 78px 60px 80px;
-    gap: 87px;
+    gap: 92px;
     max-width: 565px;
     background-color: #ffffff;
     align-items: start;
@@ -91,6 +91,7 @@
 
   .contacts__address {
     gap: 19px;
+    text-align: start;
   }
 
   .contacts__map {
