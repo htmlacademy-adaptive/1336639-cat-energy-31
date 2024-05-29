@@ -80,6 +80,7 @@
   .additional-products__list {
     border: none;
     margin-bottom: 0;
+    min-width: 896px;
   }
 
   .additional-products__item:first-child {
@@ -106,10 +107,6 @@
     display: flex;
     gap: 80px;
     align-items: center;
-  }
-
-  .additional-products__list {
-    min-width: 896px;
   }
 
   .additional-products__promotion {
