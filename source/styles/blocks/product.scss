@@ -96,9 +96,8 @@
   }
 
   .product__options {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr minmax(40px, auto);
     margin-top: 3px;
   }
 
