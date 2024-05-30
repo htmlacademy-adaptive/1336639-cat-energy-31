@@ -1,0 +1,72 @@
+.effect {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.effect__item {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 124px;
+}
+
+.effect__key {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $base-text-color;
+  background-color: $extra-background;
+  text-transform: lowercase;
+  width: 70%;
+  padding: 0 10px;
+  margin: -10px auto 0;
+}
+
+.effect__value {
+  @include font($secondary-font, 24px, 24px, $heading-color);
+  text-align: center;
+  margin: 0 auto;
+  padding: 13px 14px 17px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-transform: uppercase;
+  width: 124px;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    gap: 43px;
+    justify-content: flex-start;
+  }
+
+  .effect__item {
+    max-width: 162px;
+  }
+
+  .effect__value {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 14px 15px 19px;
+    min-width: 162px;
+    min-height: 72px;
+  }
+
+  .effect__key {
+    font-size: 14px;
+    line-height: 14px;
+    width: max-content;
+    max-width: 90%;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    gap: 42px;
+  }
+
+  .effect__key {
+    background-color: $accent-background;
+  }
+}

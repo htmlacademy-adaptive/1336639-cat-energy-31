@@ -1,0 +1,120 @@
+.main-header__wrapper {
+  padding: 13px 20px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__logotype {
+  height: 38px;
+}
+
+.main-header__logotype:hover:not(.main-header__logotype--current-page) {
+  opacity: 80%;
+}
+
+.main-header__logotype:focus-visible:not(.main-header__logotype--current-page) {
+  opacity: 80%;
+}
+
+.main-header__logotype:active:not(.main-header__logotype--current-page) {
+  opacity: 60%;
+}
+
+.main-header__toggle {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 1px;
+}
+
+.main-header__toggle::before {
+  content: "";
+  display: block;
+  min-width: 24px;
+  min-height: 24px;
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#menu-button");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 24px 24px;
+}
+
+.main-header__toggle--close::before {
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#close-button");
+  mask-size: 19px 19px;
+  min-width: 19px;
+  min-height: 19px;
+}
+
+.main-header__toggle:hover::before,
+.main-header__toggle--close:hover::before {
+  opacity: 50%;
+}
+
+.main-header__toggle:focus-visible::before,
+.main-header__toggle--close:focus-visible::before {
+  opacity: 50%;
+}
+
+.main-header__toggle:active::before,
+.main-header__toggle--close:active::before {
+  opacity: 30%;
+}
+
+.main-header__toggle--nojs {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 94px;
+    padding: 25px 30px;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__wrapper {
+    border: none;
+    padding: 0;
+    align-self: flex-start;
+  }
+
+  .main-header__logotype {
+    height: 50px;
+  }
+
+  .main-header__main-navigation {
+    max-width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding: 55px 0 29px;
+    gap: 0;
+  }
+
+  .main-header__wrapper {
+    margin-right: auto;
+    min-width: 50%;
+    align-self: flex-start;
+  }
+
+  .main-header__logotype {
+    width: 202px;
+    height: 59px;
+    display: block;
+  }
+
+  .main-header__main-navigation {
+    min-width: 50%;
+  }
+}

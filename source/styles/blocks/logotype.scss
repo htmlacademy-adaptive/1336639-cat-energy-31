@@ -1,0 +1,44 @@
+.logotype {
+  text-decoration: none;
+  display: flex;
+  gap: 56px;
+  align-items: stretch;
+}
+
+.logotype__name {
+  margin: 10px 0;
+}
+
+.logotype__name--footer {
+  width: 128px;
+  height: 24px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .logotype {
+    gap: 13px;
+  }
+
+  .logotype__name {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logotype {
+    gap: 14px;
+  }
+
+  .logotype__name {
+    width: 118px;
+    height: 21px;
+    align-self: center;
+    margin: 0;
+  }
+
+  .logotype__name--footer {
+    width: 128px;
+    height: 24px;
+  }
+}

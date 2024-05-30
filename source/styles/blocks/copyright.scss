@@ -1,0 +1,40 @@
+.copyright {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.copyright::after {
+  content: "";
+  display: block;
+  min-width: 27px;
+  min-height: 34px;
+  background-color: $social-color;
+  mask-image: url("../../icons/stack.svg#html-academy");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.copyright:hover::after {
+  background-color: $primary-color;
+}
+
+.copyright:focus-visible::after {
+  background-color: $primary-color;
+}
+
+.copyright:active::after {
+  opacity: 30%;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+    gap: 23px;
+  }
+}

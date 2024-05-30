@@ -1,0 +1,112 @@
+.main-container {
+  flex-grow: 1;
+}
+
+.main-container__heading {
+  @include font($secondary-font, 36px, 36px, $heading-color);
+  padding: 27px 20px 40px;
+  margin: 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.main-container__promo {
+  margin-bottom: 20px;
+}
+
+.main-container__programs {
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.main-container__benefits {
+  width: 100%;
+  margin: 0 auto 49px;
+}
+
+.main-container__example {
+  background-color: $extra-background;
+}
+
+.main-container__additional-products {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-container__subscribe {
+  padding: 40px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container__promo {
+    margin-bottom: 0;
+  }
+
+  .main-container__programs {
+    margin-bottom: 0;
+  }
+
+  .main-container__benefits {
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 0;
+  }
+
+  .main-container__example {
+    background-image: linear-gradient(to top, $extra-background 462px, #ffffff 462px);
+  }
+
+  .main-container__heading {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 40px 30px 84px;
+    border: none;
+  }
+
+  .main-container__subscribe {
+    padding: 80px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container__promo {
+    margin-bottom: 82px;
+  }
+
+  .main-container__programs {
+    margin: 0 auto 71px;
+    max-width: $max-desktop-container;
+  }
+
+  .main-container__benefits {
+    border: none;
+    margin-bottom: 69px;
+    max-width: $max-desktop-container;
+  }
+
+  .main-container__example {
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #ffffff 136px, $accent-background 136px);
+  }
+
+  .main-container__heading {
+    margin: 0 auto;
+    max-width: $max-desktop-container;
+    padding: 45px 0 84px;
+  }
+
+  .main-container__catalog {
+    margin: 0 auto 71px;
+    max-width: $max-desktop-container;
+  }
+
+  .main-container__additional-products {
+    margin-bottom: 96px;
+    max-width: $max-desktop-container;
+  }
+
+  .main-container__subscribe {
+    margin: 0 auto 104px;
+    padding: 0;
+    max-width: $max-desktop-container;
+  }
+}

@@ -1,0 +1,101 @@
+.slider {
+  display: grid;
+  grid-template-columns: 138px auto 138px;
+}
+
+.slider__image {
+  object-fit: cover;
+  display: block;
+  width: 280px;
+  height: 256px;
+}
+
+.slider__image--before {
+  object-position: left;
+}
+
+.slider__image--after {
+  object-position: right;
+}
+
+.slider__button {
+  display: block;
+  background-color: #666666;
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  cursor: col-resize;
+  position: relative;
+}
+
+.slider__button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__button::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#slider-button");
+  background-color: #666666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__button:hover,
+.slider__button:focus-visible {
+  background-color: $primary-color;
+}
+
+.slider__button:hover::before,
+.slider__button:focus-visible::before {
+  border-color: $primary-color;
+}
+
+.slider__button:hover::after,
+.slider__button:focus-visible::after {
+  background-color: $primary-color;
+}
+
+.slider__button:active {
+  opacity: 60%;
+}
+
+.slider__button:active::before {
+  opacity: 60%;
+}
+
+.slider__button:active::after {
+  opacity: 60%;
+}
+
+.slider__button:disabled {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    grid-template-columns: 278px auto 278px;
+  }
+
+  .slider__image {
+    width: 560px;
+    height: 512px;
+  }
+}

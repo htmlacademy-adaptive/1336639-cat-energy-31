@@ -1,0 +1,64 @@
+.subscribe__heading {
+  @include font($secondary-font, 24px, 24px, $heading-color);
+  margin: 0;
+  margin-bottom: 32px;
+  background-color: #ffffff;
+  width: fit-content;
+  max-width: 85%;
+  position: relative;
+  box-shadow: -40px 0 0 #ffffff, 40px 0 0#ffffff;
+}
+
+.subscribe__heading::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100vw;
+  background-color: $primary-color;
+  position: absolute;
+  top: 50%;
+  left: -50vw;
+  z-index: -1;
+  box-shadow: 100vw 0 0 $primary-color;
+}
+
+.subscribe__text {
+  @include font($secondary-font, 16px, 24px, $heading-color);
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .subscribe__heading {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 66px;
+    margin-left: 40px;
+  }
+
+  .subscribe__text {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 632px;
+    margin: 0 auto 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subscribe__heading {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 72px;
+  }
+
+  .subscribe__text {
+    max-width: none;
+  }
+
+  .subscribe__form {
+    margin: 0 auto;
+    width: 752px;
+  }
+}

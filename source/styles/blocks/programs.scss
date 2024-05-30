@@ -1,0 +1,43 @@
+.programs {
+  padding: 0 20px;
+}
+
+.programs__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.programs__item {
+  background-color: $accent-background;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    padding: 0 30px;
+  }
+
+  .programs__list {
+    gap: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    padding: 0;
+  }
+
+  .programs__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    min-width: 570px;
+    min-height: 374px;
+  }
+}

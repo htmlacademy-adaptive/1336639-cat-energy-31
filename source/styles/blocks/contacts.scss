@@ -1,0 +1,108 @@
+.contacts__wrapper {
+  padding: 26px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.contacts__cooperation {
+  @include font($secondary-font, 16px, 20px, #111111);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contacts__address {
+  @include font($primary-font, 14px, 20px, inherit);
+}
+
+.contacts__location {
+  display: block;
+  margin: 0 auto;
+}
+
+.contacts--accent {
+  background-color: $accent-background;
+}
+
+.contacts__map {
+  height: 362px;
+  background-image:
+    image-set(
+      url("../../images/location-bg-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/location-bg-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/location-bg-mobile@2x.jpg") type("image/jpeg") 2x,
+      url("../../images/location-bg-mobile@1x.jpg") type("image/jpeg") 1x
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts__map-widget {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 60px 70px;
+    gap: 308px;
+  }
+
+  .contacts__cooperation {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contacts__map {
+    background-image:
+      image-set(
+        url("../../images/location-bg-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/location-bg-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/location-bg-tablet@2x.jpg") type("image/jpeg") 2x,
+        url("../../images/location-bg-tablet@1x.jpg") type("image/jpeg") 1x
+      );
+    background-size: 100% 400px;
+    min-height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    padding: 60px 78px 60px 80px;
+    gap: 92px;
+    max-width: 565px;
+    background-color: #ffffff;
+    align-items: start;
+    grid-area: 2/2/3/3;
+    z-index: 2;
+  }
+
+  .contacts__address {
+    gap: 19px;
+    text-align: start;
+  }
+
+  .contacts__map {
+    background-image:
+      image-set(
+        url("../../images/location-bg-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/location-bg-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/location-bg-desktop@2x.jpg") type("image/jpeg") 2x,
+        url("../../images/location-bg-desktop@1x.jpg") type("image/jpeg") 1x
+      );
+    grid-area: 1/1/4/6;
+    height: auto;
+  }
+}
