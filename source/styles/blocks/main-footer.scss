@@ -61,12 +61,6 @@
     background-color: $accent-background;
   }
 
-  .main-footer__contacts {
-    display: grid;
-    grid-template-columns: auto 565px 90px 565px auto;
-    grid-template-rows: 95px auto 106px;
-  }
-
   .main-footer__wrapper {
     padding: 67px 0;
     max-width: 1220px;

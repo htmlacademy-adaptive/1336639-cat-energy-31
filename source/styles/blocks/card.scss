@@ -116,6 +116,7 @@
     justify-items: center;
     padding: 0 37px 40px;
     grid-template-columns: none;
+    grid-auto-rows: auto auto 1fr auto;
   }
 
   .card__image-link {
@@ -152,6 +153,7 @@
   .card__link {
     width: 100%;
     margin-top: 0;
+    align-self: end;
   }
 
   .card--to-all {
@@ -193,7 +195,6 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    display: block;
     padding: 0 38px 40px;
   }
 

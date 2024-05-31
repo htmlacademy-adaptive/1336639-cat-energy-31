@@ -34,13 +34,16 @@
   grid-area: 1/2/2/3;
 }
 
-.promo__slogan {
+.promo__text {
   @include font($secondary-font, 14px, 14px, $light-text);
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 29px;
   text-align: center;
   padding: 0;
+  margin-bottom: 29px;
+}
+
+.promo__slogan {
   grid-area: 2/2/3/3;
 }
 
@@ -87,11 +90,14 @@
     padding: 0;
   }
 
-  .promo__slogan {
+  .promo__text {
     @include font($secondary-font, 20px, 20px, $heading-color);
-    margin: 0 auto 50px 90px;
     text-align: left;
     padding: 0;
+  }
+
+  .promo__slogan {
+    margin: 0 auto 50px 90px;
   }
 
   .promo__image {
@@ -142,8 +148,12 @@
     word-wrap: break-word;
   }
 
+  .promo__text {
+    margin-bottom: 20px;
+  }
+
   .promo__slogan {
-    margin: 40px 0 52px;
+    margin: 40px 0 30px;
     grid-area: 3/1/4/2;
   }
 
