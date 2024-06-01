@@ -27,15 +27,6 @@
 
 .contacts__map {
   height: 362px;
-  background-image:
-    image-set(
-      url("../../images/location-bg-mobile@2x.webp") type("image/webp") 2x,
-      url("../../images/location-bg-mobile@1x.webp") type("image/webp") 1x,
-      url("../../images/location-bg-mobile@2x.jpg") type("image/jpeg") 2x,
-      url("../../images/location-bg-mobile@1x.jpg") type("image/jpeg") 1x
-    );
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contacts__map-widget {
@@ -66,43 +57,47 @@
   }
 
   .contacts__map {
-    background-image:
-      image-set(
-        url("../../images/location-bg-tablet@2x.webp") type("image/webp") 2x,
-        url("../../images/location-bg-tablet@1x.webp") type("image/webp") 1x,
-        url("../../images/location-bg-tablet@2x.jpg") type("image/jpeg") 2x,
-        url("../../images/location-bg-tablet@1x.jpg") type("image/jpeg") 1x
-      );
-    background-size: 100% 400px;
     min-height: 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    display: grid;
+    grid-template-columns: auto 565px 90px 565px auto;
+    grid-template-rows: 95px auto 106px;
+  }
+
   .contacts__wrapper {
     padding: 60px 78px 60px 80px;
     gap: 92px;
     max-width: 565px;
+    height: max-content;
     background-color: #ffffff;
     align-items: start;
     grid-area: 2/2/3/3;
     z-index: 2;
+    grid-template-rows: max-content;
+  }
+
+  .contacts__cooperation {
+    width: 163px;
   }
 
   .contacts__address {
     gap: 19px;
     text-align: start;
+    width: 157px;
   }
 
   .contacts__map {
-    background-image:
-      image-set(
-        url("../../images/location-bg-desktop@2x.webp") type("image/webp") 2x,
-        url("../../images/location-bg-desktop@1x.webp") type("image/webp") 1x,
-        url("../../images/location-bg-desktop@2x.jpg") type("image/jpeg") 2x,
-        url("../../images/location-bg-desktop@1x.jpg") type("image/jpeg") 1x
-      );
     grid-area: 1/1/4/6;
+    width: 100%;
     height: auto;
+    background-color: #f2f2f2;
+  }
+
+  .contacts__location {
+    display: block;
   }
 }

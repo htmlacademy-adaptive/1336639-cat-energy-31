@@ -49,7 +49,9 @@
     <section class="main-container__promo promo" data-test="hero">
       <div class="promo__container">
         <h1 class="promo__heading">Функциональное питание для котов</h1>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <div class="promo__slogan">
+          <p class="promo__text">Занялся собой? Займись котом!</p>
+        </div>
         <div class="promo__picture">
           <picture>
             <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/promo-can-desktop@1x.webp 1x, images/promo-can-desktop@2x.webp 2x">
@@ -146,7 +148,17 @@
         </address>
       </div>
       <div class="contacts__map">
-        <iframe class="contacts__map-widget" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0fdb1c5dfb9f3c34e1f1362539d3a3e611ed2d3d4f666ad9c6ae9284580a4cb1&amp;source=constructor" width="320" height="362" title="Адрес офиса компании: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8" loading="lazy"></iframe>
+        <noscript>
+          <picture>
+            <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="images/location-bg-desktop@1x.webp 1x, images/location-bg-desktop@2x.webp 2x">
+            <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/location-bg-tablet@1x.webp 1x, images/location-bg-tablet@2x.webp 2x">
+            <source width="320" height="362" type="image/webp" srcset="images/location-bg-mobile@1x.webp, images/location-bg-mobile@2x.webp 2x">
+            <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/location-bg-desktop@1x.jpg 1x, images/location-bg-desktop@2x.jpg 2x">
+            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/location-bg-tablet@1x.jpg 1x, images/location-bg-tablet@2x.jpg 2x">
+            <img class="contacts__location" src="images/location-bg-mobile@1x.jpg" srcset="images/location-bg-mobile@2x.jpg 2x" width="320" height="362" alt="Карта офиса по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+          </picture>
+        </noscript>
+        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0fdb1c5dfb9f3c34e1f1362539d3a3e611ed2d3d4f666ad9c6ae9284580a4cb1&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
     </section>
     <div class="main-footer__wrapper" data-test="footer">
